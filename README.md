@@ -36,10 +36,9 @@
       </button>
       <div class="hidden md:flex items-center gap-7 text-sm font-semibold">
         <button onclick="switchPage('home')" id="nav-home" class="nav-link active py-2">Home</button>
-        <button onclick="switchPage('experience')" id="nav-experience" class="nav-link py-2">Experience</button>
+        <button onclick="switchPage('work experience')" id="nav-experience" class="nav-link py-2">Experience</button>
         <button onclick="switchPage('robotics')" id="nav-robotics" class="nav-link py-2">Robotics</button>
         <button onclick="switchPage('fsae')" id="nav-fsae" class="nav-link py-2">FSAE</button>
-        <button onclick="switchPage('marieb')" id="nav-marieb" class="nav-link py-2">Marieb Center</button>
         <button onclick="switchPage('projects')" id="nav-projects" class="nav-link py-2">Projects</button>
       </div>
       <button id="menu-button" class="md:hidden text-xl p-2" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
