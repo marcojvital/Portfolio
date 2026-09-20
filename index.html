@@ -4,10 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marco Vital | Mechanical Engineering</title>
-  <meta http-equiv="refresh" content="0; url=https://raw.githubusercontent.com/marcojvital/Portfolio/main/README.md">
   <script>
-    // README.md contains the portfolio's HTML. Load it as HTML instead of
-    // allowing the browser to display the source document as plain text.
+    // README.md contains the portfolio HTML. Fetch it and replace this
+    // bootstrap page so the README source is never displayed as text.
     fetch('https://raw.githubusercontent.com/marcojvital/Portfolio/main/README.md')
       .then(response => {
         if (!response.ok) throw new Error('Unable to load portfolio');
