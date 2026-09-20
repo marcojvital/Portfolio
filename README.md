@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- EDIT HERE: Update the browser description and page title. -->
   <meta name="description" content="Marco Vital — mechanical engineering portfolio">
   <title>Marco Vital | Mechanical Engineering</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,16 +32,14 @@
 <body>
   <header class="border-b border-[#dfe2df] bg-[#f7f6f2]/95 sticky top-0 z-50 backdrop-blur">
     <nav class="max-w-6xl mx-auto px-5 lg:px-8 h-20 flex items-center justify-between" aria-label="Main navigation">
-      <!-- EDIT HERE: Change your name and subtitle in the header. -->
       <button onclick="switchPage('home')" class="text-left" aria-label="Go to home">
         <span class="block font-bold text-xl tracking-tight">Marco Vital</span>
         <span class="block text-xs text-[#5d6873] mt-0.5">Mechanical Engineering</span>
       </button>
-      <!-- Skills is intentionally second to last; Timeline is the final navigation item. -->
       <div class="hidden md:flex items-center gap-7 text-sm font-semibold">
         <button onclick="switchPage('home')" id="nav-home" class="nav-link active py-2">Home</button>
-        <button onclick="switchPage('timeline')" id="nav-timeline" class="nav-link py-2">Timeline</button>
         <button onclick="switchPage('experience')" id="nav-experience" class="nav-link py-2">Work Experience</button>
+        <button onclick="switchPage('timeline')" id="nav-timeline" class="nav-link py-2">Timeline</button>
         <button onclick="switchPage('robotics')" id="nav-robotics" class="nav-link py-2">Robotics</button>
         <button onclick="switchPage('fsae')" id="nav-fsae" class="nav-link py-2">FSAE</button>
         <button onclick="switchPage('projects')" id="nav-projects" class="nav-link py-2">Personal Projects</button>
@@ -52,92 +49,74 @@
     </nav>
     <div class="mobile-menu hidden md:hidden flex-col gap-1 px-5 pb-4 text-sm font-semibold border-t border-[#dfe2df]">
       <button onclick="switchPage('home')" class="text-left py-2">Home</button>
-      <button onclick="switchPage('experience')" class="text-left py-2">Experience</button>
+      <button onclick="switchPage('experience')" class="text-left py-2">Work Experience</button>
+      <button onclick="switchPage('timeline')" class="text-left py-2">Timeline</button>
       <button onclick="switchPage('robotics')" class="text-left py-2">Robotics</button>
       <button onclick="switchPage('fsae')" class="text-left py-2">FSAE</button>
-      <button onclick="switchPage('projects')" class="text-left py-2">Projects</button>
+      <button onclick="switchPage('projects')" class="text-left py-2">Personal Projects</button>
       <button onclick="switchPage('skills')" class="text-left py-2">Skills</button>
-      <button onclick="switchPage('timeline')" class="text-left py-2">Timeline</button>
     </div>
   </header>
 
   <main class="max-w-6xl mx-auto px-5 lg:px-8 py-12 md:py-20">
     <section id="page-home" class="page-section active-page">
       <div class="grid md:grid-cols-[1.1fr_.9fr] gap-12 items-center"><div>
-        <!-- EDIT HERE: Update the homepage eyebrow, headline, intro text, location, and graduation date. -->
         <p class="eyebrow mb-5">Mechanical engineering student · UMass Amherst</p>
-        <h1 class="text-5xl md:text-7xl leading-[.98] font-bold tracking-tight mb-6">I like figuring out<br><span class="text-[#164e63]">how things work.</span></h1>
+        <h1 class="text-5xl md:text-7xl leading-[.98] font-bold tracking-tight mb-6">Designing reliable systems<br><span class="text-[#164e63]">for the real world.</span></h1>
         <p class="text-lg text-[#5d6873] leading-relaxed max-w-xl mb-8">I am a mechanical engineering student interested in design, robotics, analysis, and manufacturing.</p>
         <p class="mt-8 text-sm text-[#5d6873]"><i class="fa-solid fa-location-dot mr-2 text-[#c65d32]"></i>Ludlow, Massachusetts · Expected May 2028</p>
       </div><div class="placeholder min-h-[360px] md:min-h-[430px]"><div><i class="fa-regular fa-image text-3xl mb-3"></i><p class="text-sm">Portrait / hero image<br><span class="text-xs">Add your photo here</span></p></div></div></div>
       <div class="border-t border-[#dfe2df] mt-20 pt-8 grid sm:grid-cols-2 gap-8"><div>
-        <!-- EDIT HERE: Replace this with your current job title and company. -->
         <p class="eyebrow">Currently</p><p class="mt-2 font-semibold">Atlas Actuator Team Co-op<br><span class="font-normal text-[#5d6873]">Boston Dynamics</span></p>
       </div><div>
-        <!-- EDIT HERE: Replace this focus area text with your own technical focus. -->
         <p class="eyebrow">Focus</p><p class="mt-2 font-semibold">Design, analysis & manufacturing</p>
       </div></div>
     </section>
 
     <section id="page-experience" class="page-section">
-      <!-- EDIT HERE: Update the Experience page heading and introduction. -->
       <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Experience</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Building things, then learning from them.</h1></div>
       <div class="space-y-6">
-        <!-- EDIT HERE: Update this experience card with your current role. -->
-        <article class="card p-6 md:p-8"><p class="eyebrow">July 2026 – Present</p><h2 class="text-2xl font-bold mt-1">Atlas Actuator Team Co-op</h2><p class="text-[#164e63] font-semibold">Boston Dynamics</p><p class="text-[#5d6873] mt-4">Working on mechanical engineering projects involving design, analysis, and manufacturing.</p></article>
-        <!-- EDIT HERE: Duplicate or replace this card for another experience. -->
-        <article class="card p-6 md:p-8"><p class="eyebrow">Fall 2025 – Spring 2026</p><h2 class="text-2xl font-bold mt-1">Manufacturing Intern</h2><p class="text-[#164e63] font-semibold">UMass Amherst</p></article>
+        <article class="card p-6 md:p-8"><p class="eyebrow">July 2026 – Present</p><h2 class="text-2xl font-bold mt-1">Atlas Actuator Team Co-op</h2><p class="text-[#164e63] font-semibold">Boston Dynamics</p><p class="mt-4 text-[#5d6873]">Supporting actuator design, prototyping, and testing for advanced robotics systems.</p></article>
+        <article class="card p-6 md:p-8"><p class="eyebrow">Fall 2025 – Spring 2026</p><h2 class="text-2xl font-bold mt-1">Manufacturing Intern</h2><p class="text-[#164e63] font-semibold">UMass Amherst</p><p class="mt-4 text-[#5d6873]">Worked on fabrication workflows, process improvements, and hands-on production support for student engineering projects.</p></article>
       </div>
     </section>
 
     <section id="page-robotics" class="page-section">
-      <!-- EDIT HERE: Update the robotics section and card content. -->
       <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Student design team</p><h1 class="text-4xl md:text-5xl font-bold mb-4">UMass Robotics Research Team</h1></div>
-      <div class="grid lg:grid-cols-2 gap-6"><article class="card overflow-hidden"><div class="placeholder"><p class="text-sm">Add quadruped photo or CAD render here</p></div><div class="p-6"><h2 class="text-2xl font-bold">Quadruped robotics</h2></div></article><article class="card overflow-hidden"><div class="placeholder"><p class="text-sm">Add humanoid robot photo or CAD render here</p></div><div class="p-6"><h2 class="text-2xl font-bold">Humanoid robotics</h2></div></article></div>
+      <div class="grid lg:grid-cols-2 gap-6"><article class="card overflow-hidden"><div class="placeholder"><p class="text-sm">Add quadruped photo or CAD render here</p></div><div class="p-6"><h2 class="text-2xl font-bold mb-3">Robotics platform development</h2><p class="text-[#5d6873]">Research and development focused on legged locomotion, mechanical design iteration, and robust prototyping.</p></div></article></div>
     </section>
 
     <section id="page-fsae" class="page-section">
-      <!-- EDIT HERE: Update the FSAE heading, image, and project description. -->
       <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Student design team · Fall 2024 – Present</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Minutemen Racing</h1></div>
-      <div class="grid lg:grid-cols-[.8fr_1.2fr] gap-8 items-start"><div class="placeholder min-h-[390px]"><p class="text-sm">Add racecar / chassis photo here</p></div><div class="card p-6 md:p-8"><h2 class="text-2xl font-bold">Project description</h2><p class="text-[#5d6873] mt-4">Add the project goal, your responsibilities, design decisions, results, and lessons learned.</p></div></div>
+      <div class="grid lg:grid-cols-[.8fr_1.2fr] gap-8 items-start"><div class="placeholder min-h-[390px]"><p class="text-sm">Add racecar / chassis photo here</p></div><div class="card p-6 md:p-8"><h2 class="text-2xl font-bold mb-3">Formula-style vehicle design</h2><p class="text-[#5d6873]">Contributing to chassis, suspension, and manufacturing work with an emphasis on performance, reliability, and iterative testing.</p></div></div>
     </section>
 
     <section id="page-projects" class="page-section">
-      <!-- EDIT HERE: Update the project cards with your own work. -->
-      <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Personal work</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Projects</h1><p class="text-lg text-[#5d6873]">Personal engineering projects and experiments.</p></div>
-      <div class="grid lg:grid-cols-2 gap-6"><article class="card overflow-hidden"><div class="placeholder"><p class="text-sm">Add project image here</p></div><div class="p-6"><p class="eyebrow">Personal project</p><h2 class="text-2xl font-bold mt-2">Project title</h2><p class="text-[#5d6873] mt-3">Explain what you built, the problem it solves, the tools you used, and the result.</p></div></article><article class="card overflow-hidden"><div class="placeholder"><p class="text-sm">Add project image here</p></div><div class="p-6"><p class="eyebrow">Personal project</p><h2 class="text-2xl font-bold mt-2">Project title</h2><p class="text-[#5d6873] mt-3">Explain what you built, the problem it solves, the tools you used, and the result.</p></div></article></div>
+      <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Personal work</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Projects</h1><p class="text-lg text-[#5d6873]">Personal engineering projects focused on build quality, problem solving, and practical iteration.</p></div>
+      <div class="grid lg:grid-cols-2 gap-6"><article class="card overflow-hidden"><div class="placeholder"><p class="text-sm">Add project image here</p></div><div class="p-6"><p class="eyebrow">Personal</p><h2 class="text-2xl font-bold mt-2 mb-3">Prototype rig</h2><p class="text-[#5d6873]">A custom mechanical build used to explore design constraints, fabrication, and testing workflows.</p></div></article></div>
     </section>
 
     <section id="page-skills" class="page-section">
-      <!-- EDIT HERE: Update the Skills page and skill cards. -->
-      <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Capabilities</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Skills</h1><p class="text-lg text-[#5d6873]">Tools and techniques I use to bring engineering projects to life.</p></div>
-      <div class="grid md:grid-cols-2 gap-6"><article class="card p-6 md:p-8"><h2 class="text-2xl font-bold">Design</h2><p class="text-[#5d6873] mt-4">Mechanical design, CAD, prototyping, and design iteration.</p></article><article class="card p-6 md:p-8"><h2 class="text-2xl font-bold">Engineering tools</h2><p class="text-[#5d6873] mt-4">CAD, simulation, technical drawings, and engineering analysis.</p></article><article class="card p-6 md:p-8"><h2 class="text-2xl font-bold">Manufacturing</h2><p class="text-[#5d6873] mt-4">Hands-on fabrication, machining, assembly, and process improvement.</p></article><article class="card p-6 md:p-8"><h2 class="text-2xl font-bold">Programming</h2><p class="text-[#5d6873] mt-4">Programming and automation for engineering applications.</p></article></div>
+      <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Capabilities</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Skills</h1><p class="text-lg text-[#5d6873]">Tools and techniques I use to build, analyze, and improve mechanical systems.</p></div>
+      <div class="grid md:grid-cols-2 gap-6"><article class="card p-6 md:p-8"><h2 class="text-2xl font-bold">Design</h2><p class="text-[#5d6873] mt-4">Mechanical design, CAD, prototyping, and design iteration for real-world engineering problems.</p></article></div>
     </section>
 
     <section id="page-timeline" class="page-section">
-      <!-- EDIT HERE: Change the timeline heading and introduction. -->
-      <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Engineering journey</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Progress, one build at a time.</h1><p class="text-lg text-[#5d6873]">A modular record of the experiences, projects, and lessons shaping me as an engineer.</p></div>
+      <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Engineering journey</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Progress, one build at a time.</h1><p class="text-lg text-[#5d6873]">A snapshot of the milestones shaping my path in engineering and design.</p></div>
       <div class="relative pl-10">
         <div class="timeline-line" aria-hidden="true"></div>
-        <!-- EDIT HERE: Copy one timeline article to add a milestone. Change its date, title, category, description, and tags. -->
-        <article class="relative mb-8"><span class="timeline-dot" aria-hidden="true"></span><div class="card p-6 md:p-8"><p class="eyebrow">Fall 2024 · Student design team</p><h2 class="text-2xl font-bold mt-1">Started with Minutemen Racing</h2><p class="text-[#5d6873] mt-3">Add what you learned, built, or contributed during this stage of your engineering journey.</p><div class="flex flex-wrap gap-2 mt-5"><span class="text-xs bg-[#eef1ee] px-3 py-1 rounded-full">Design</span><span class="text-xs bg-[#eef1ee] px-3 py-1 rounded-full">Teamwork</span></div></div></article>
-        <!-- EDIT HERE: Copy this milestone template for your next experience. -->
-        <article class="relative mb-8"><span class="timeline-dot" aria-hidden="true"></span><div class="card p-6 md:p-8"><p class="eyebrow">Fall 2025 · Manufacturing</p><h2 class="text-2xl font-bold mt-1">Built hands-on experience</h2><p class="text-[#5d6873] mt-3">Describe the skills, tools, or perspective you gained from this milestone.</p><div class="flex flex-wrap gap-2 mt-5"><span class="text-xs bg-[#eef1ee] px-3 py-1 rounded-full">Manufacturing</span><span class="text-xs bg-[#eef1ee] px-3 py-1 rounded-full">Learning</span></div></div></article>
-        <!-- EDIT HERE: Add future milestones below this comment as your engineering story grows. -->
-        <article class="relative"><span class="timeline-dot" aria-hidden="true"></span><div class="card p-6 md:p-8"><p class="eyebrow">July 2026 · Boston Dynamics</p><h2 class="text-2xl font-bold mt-1">Joined the Atlas Actuator Team</h2><p class="text-[#5d6873] mt-3">Add the impact and lessons from your current co-op here.</p><div class="flex flex-wrap gap-2 mt-5"><span class="text-xs bg-[#eef1ee] px-3 py-1 rounded-full">Actuators</span><span class="text-xs bg-[#eef1ee] px-3 py-1 rounded-full">Engineering</span></div></div></article>
+        <article class="relative mb-8"><span class="timeline-dot" aria-hidden="true"></span><div class="card p-6 md:p-8"><p class="eyebrow">Fall 2024 · Student design team</p><h2 class="text-2xl font-bold mt-1">Minutemen Racing</h2><p class="mt-3 text-[#5d6873]">Joined the team and began hands-on design work focused on vehicle systems and performance.</p></div></article>
+        <article class="relative mb-8"><span class="timeline-dot" aria-hidden="true"></span><div class="card p-6 md:p-8"><p class="eyebrow">Fall 2025 · Manufacturing</p><h2 class="text-2xl font-bold mt-1">Fabrication and process work</h2><p class="mt-3 text-[#5d6873]">Built experience in manufacturing workflows, process documentation, and iterative improvement.</p></div></article>
+        <article class="relative"><span class="timeline-dot" aria-hidden="true"></span><div class="card p-6 md:p-8"><p class="eyebrow">July 2026 · Boston Dynamics</p><h2 class="text-2xl font-bold mt-1">Atlas actuator team co-op</h2><p class="mt-3 text-[#5d6873]">Working on advanced robotics hardware and actuator development.</p></div></article>
       </div>
     </section>
   </main>
 
-  <footer class="border-t border-[#dfe2df] mt-8"><div class="max-w-6xl mx-auto px-5 lg:px-8 py-8 flex flex-col sm:flex-row justify-between gap-5"><div><p class="font-bold">Marco Vital</p><p class="text-sm text-[#5d6873]">Mechanical engineering portfolio</p></div>
-    <!-- EDIT HERE: Update both email and phone links and displayed values. -->
-    <div class="flex flex-col sm:items-end gap-2 text-sm text-[#5d6873]"><a href="mailto:marcojvital@gmail.com" aria-label="Email Marco Vital" class="inline-flex items-center gap-2 hover:text-[#164e63]"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>marcojvital@gmail.com</span></a><a href="tel:+14135405887" aria-label="Call Marco Vital" class="inline-flex items-center gap-2 hover:text-[#164e63]"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>(413) 540-5887</span></a></div>
-  </div></footer>
+  <footer class="border-t border-[#dfe2df] mt-8"><div class="max-w-6xl mx-auto px-5 lg:px-8 py-8 flex flex-col sm:flex-row justify-between gap-5"><div><p class="font-bold">Marco Vital</p><p class="text-sm text-[#5d6873]">Mechanical engineering portfolio</p></div><div class="flex flex-col sm:items-end gap-2 text-sm text-[#5d6873]"><a href="mailto:marcojvital@gmail.com" aria-label="Email Marco Vital" class="inline-flex items-center gap-2 hover:text-[#164e63]"><i class="fa-solid fa-envelope"></i>marcojvital@gmail.com</a><a href="tel:+14135432744" aria-label="Call Marco Vital" class="inline-flex items-center gap-2 hover:text-[#164e63]"><i class="fa-solid fa-phone"></i>(413) 543-2744</a></div></div></footer>
   <script>
-    // EDIT HERE: Add a new page name here if you create another page section.
     const pages=['home','experience','robotics','fsae','projects','skills','timeline'];
-    function switchPage(page, updateHash=true){ if(!pages.includes(page)) page='home'; pages.forEach(item=>{document.getElementById('page-'+item).classList.toggle('active-page',item===page);const nav=document.getElementById('nav-'+item);if(nav) nav.classList.toggle('active',item===page);});document.body.classList.remove('menu-open');if(updateHash) history.replaceState(null,'','#'+page);window.scrollTo({top:0,behavior:'smooth'}); }
-    document.getElementById('menu-button').addEventListener('click',()=>{document.body.classList.toggle('menu-open');document.getElementById('menu-button').setAttribute('aria-expanded',document.body.classList.contains('menu-open'));});
+    function switchPage(page, updateHash=true){ if(!pages.includes(page)) page='home'; pages.forEach(item=>{document.getElementById('page-'+item).classList.toggle('active-page',item===page); const nav=document.getElementById('nav-'+item); if(nav){ nav.classList.toggle('active', item===page); }}); if(updateHash){ location.hash=''+page; } }
+    document.getElementById('menu-button').addEventListener('click',()=>{document.body.classList.toggle('menu-open'); document.getElementById('menu-button').setAttribute('aria-expanded', document.body.classList.contains('menu-open'));});
     document.querySelectorAll('.mobile-menu button').forEach(button=>button.addEventListener('click',()=>document.body.classList.remove('menu-open')));
     const initial=location.hash.slice(1); switchPage(pages.includes(initial)?initial:'home',false);
   </script>
