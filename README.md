@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- EDIT HERE: Update the browser description and page title. -->
   <meta name="description" content="Marco Vital — mechanical engineering portfolio">
   <title>Marco Vital | Mechanical Engineering</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +31,7 @@
 <body>
   <header class="border-b border-[#dfe2df] bg-[#f7f6f2]/95 sticky top-0 z-50 backdrop-blur">
     <nav class="max-w-6xl mx-auto px-5 lg:px-8 h-20 flex items-center justify-between" aria-label="Main navigation">
+      <!-- EDIT HERE: Change your name and subtitle in the header. -->
       <button onclick="switchPage('home')" class="text-left" aria-label="Go to home">
         <span class="block font-bold text-xl tracking-tight">Marco Vital</span>
         <span class="block text-xs text-[#5d6873] mt-0.5">Mechanical Engineering</span>
@@ -51,20 +53,78 @@
   <main class="max-w-6xl mx-auto px-5 lg:px-8 py-12 md:py-20">
     <section id="page-home" class="page-section active-page">
       <div class="grid md:grid-cols-[1.1fr_.9fr] gap-12 items-center"><div>
+        <!-- EDIT HERE: Update the homepage eyebrow, headline, intro text, location, and graduation date. -->
         <p class="eyebrow mb-5">Mechanical engineering student · UMass Amherst</p>
         <h1 class="text-5xl md:text-7xl leading-[.98] font-bold tracking-tight mb-6">I like figuring out<br><span class="text-[#164e63]">how things work.</span></h1>
         <p class="text-lg text-[#5d6873] leading-relaxed max-w-xl mb-8">I am a mechanical engineering student interested in design, robotics, analysis, and manufacturing.</p>
         <p class="mt-8 text-sm text-[#5d6873]"><i class="fa-solid fa-location-dot mr-2 text-[#c65d32]"></i>Ludlow, Massachusetts · Expected May 2028</p>
       </div><div class="placeholder min-h-[360px] md:min-h-[430px]"><div><i class="fa-regular fa-image text-3xl mb-3"></i><p class="text-sm">Portrait / hero image<br><span class="text-xs">Add your photo here</span></p></div></div></div>
-      <div class="border-t border-[#dfe2df] mt-20 pt-8 grid sm:grid-cols-2 gap-8"><div><p class="eyebrow">Currently</p><p class="mt-2 font-semibold">Atlas Actuator Team Co-op<br><span class="font-normal text-[#5d6873]">Boston Dynamics</span></p></div><div><p class="eyebrow">Focus</p><p class="mt-2 font-semibold">Design, analysis & manufacturing</p></div></div>
+      <div class="border-t border-[#dfe2df] mt-20 pt-8 grid sm:grid-cols-2 gap-8"><div>
+        <!-- EDIT HERE: Replace this with your current job title and company. -->
+        <p class="eyebrow">Currently</p>
+        <p class="mt-2 font-semibold">Atlas Actuator Team Co-op<br><span class="font-normal text-[#5d6873]">Boston Dynamics</span></p>
+      </div><div>
+        <!-- EDIT HERE: Replace this focus area text with your own technical focus. -->
+        <p class="eyebrow">Focus</p>
+        <p class="mt-2 font-semibold">Design, analysis & manufacturing</p>
+      </div></div>
     </section>
-    <section id="page-skills" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Capabilities</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Skills</h1><p class="text-lg text-[#5d6873]">Tools and techniques I use to bring engineering projects to life.</p></div><div class="grid md:grid-cols-2 gap-6"> <article class="card p-6 md:p-8"><h2 class="text-2xl font-bold">Design</h2><p class="text-[#5d6873] mt-4">Mechanical design, CAD, prototyping, and design iteration.</p></article><article class="card p-6 md:p-8"><h2 class="text-2xl font-bold">Engineering tools</h2><p class="text-[#5d6873] mt-4">CAD, simulation, technical drawings, and engineering analysis.</p></article><article class="card p-6 md:p-8"><h2 class="text-2xl font-bold">Manufacturing</h2><p class="text-[#5d6873] mt-4">Hands-on fabrication, machining, assembly, and process improvement.</p></article><article class="card p-6 md:p-8"><h2 class="text-2xl font-bold">Programming</h2><p class="text-[#5d6873] mt-4">Programming and automation for engineering applications.</p></article></div></section>
-    <section id="page-experience" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Experience</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Building things, then learning from them.</h1></div><div class="space-y-6"><article class="card p-6 md:p-8"><p class="eyebrow">July 2026 – Present</p><h2 class="text-2xl font-bold mt-1">Atlas Actuator Team Co-op</h2><p class="text-[#164e63] font-semibold">Boston Dynamics</p><p class="text-[#5d6873] mt-4">Working on mechanical engineering projects involving design, analysis, and manufacturing.</p></article><article class="card p-6 md:p-8"><p class="eyebrow">Fall 2025 – Spring 2026</p><h2 class="text-2xl font-bold mt-1">Manufacturing Intern</h2><p class="text-[#164e63] font-semibold">UMass Amherst</p></article></div></section>
-    <section id="page-robotics" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Student design team</p><h1 class="text-4xl md:text-5xl font-bold mb-4">UMass Robotics Research Team</h1></div><div class="grid lg:grid-cols-2 gap-6"><article class="card overflow-hidden"><div class="placeholder"><p class="text-sm">Add quadruped photo or CAD render here</p></div><div class="p-6"><h2 class="text-2xl font-bold">Quadruped robotics</h2></div></article><article class="card overflow-hidden"><div class="placeholder"><p class="text-sm">Add humanoid robot photo or CAD render here</p></div><div class="p-6"><h2 class="text-2xl font-bold">Humanoid robotics</h2></div></article></div></section>
-    <section id="page-fsae" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Student design team · Fall 2024 – Present</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Minutemen Racing</h1></div><div class="grid lg:grid-cols-[.8fr_1.2fr] gap-8 items-start"><div class="placeholder min-h-[390px]"><p class="text-sm">Add racecar / chassis photo here</p></div><div class="card p-6 md:p-8"><h2 class="text-2xl font-bold">Project description</h2><p class="text-[#5d6873] mt-4">Add the project goal, your responsibilities, design decisions, results, and lessons learned.</p></div></div></section>
-    <section id="page-projects" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Personal work</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Projects</h1><p class="text-lg text-[#5d6873]">Personal engineering projects and experiments.</p></div><div class="grid lg:grid-cols-2 gap-6"><article class="card overflow-hidden"><div class="placeholder"><p class="text-sm">Add project image here</p></div><div class="p-6"><p class="eyebrow">Personal project</p><h2 class="text-2xl font-bold mt-2">Project title</h2><p class="text-[#5d6873] mt-3">Explain what you built, the problem it solves, the tools you used, and the result.</p></div></article><article class="card overflow-hidden"><div class="placeholder"><p class="text-sm">Add project image here</p></div><div class="p-6"><p class="eyebrow">Personal project</p><h2 class="text-2xl font-bold mt-2">Project title</h2><p class="text-[#5d6873] mt-3">Explain what you built, the problem it solves, the tools you used, and the result.</p></div></article></div></section>
+    <section id="page-skills" class="page-section">
+      <!-- EDIT HERE: Update the Skills page heading and paragraph. -->
+      <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Capabilities</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Skills</h1><p class="text-lg text-[#5d6873]">Tools and techniques I use to bring engineering projects to life.</p></div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- EDIT HERE: Replace each skill card title and description. -->
+        <article class="card p-6 md:p-8"><h2 class="text-2xl font-bold">Design</h2><p class="text-[#5d6873] mt-4">Mechanical design, CAD, prototyping, and design iteration.</p></article>
+        <article class="card p-6 md:p-8"><h2 class="text-2xl font-bold">Engineering tools</h2><p class="text-[#5d6873] mt-4">CAD, simulation, technical drawings, and engineering analysis.</p></article>
+        <article class="card p-6 md:p-8"><h2 class="text-2xl font-bold">Manufacturing</h2><p class="text-[#5d6873] mt-4">Hands-on fabrication, machining, assembly, and process improvement.</p></article>
+        <article class="card p-6 md:p-8"><h2 class="text-2xl font-bold">Programming</h2><p class="text-[#5d6873] mt-4">Programming and automation for engineering applications.</p></article>
+      </div>
+    </section>
+    <section id="page-experience" class="page-section">
+      <!-- EDIT HERE: Update the Experience page heading and intro paragraph. -->
+      <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Experience</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Building things, then learning from them.</h1></div>
+      <div class="space-y-6">
+        <!-- EDIT HERE: Update this first card with your current role, dates, company, description, and bullets. -->
+        <article class="card p-6 md:p-8"><p class="eyebrow">July 2026 – Present</p><h2 class="text-2xl font-bold mt-1">Atlas Actuator Team Co-op</h2><p class="text-[#164e63] font-semibold">Boston Dynamics</p><p class="text-[#5d6873] mt-4">Working on mechanical engineering projects involving design, analysis, and manufacturing.</p></article>
+        <!-- EDIT HERE: Duplicate or replace this second card for another internship, role, or project. -->
+        <article class="card p-6 md:p-8"><p class="eyebrow">Fall 2025 – Spring 2026</p><h2 class="text-2xl font-bold mt-1">Manufacturing Intern</h2><p class="text-[#164e63] font-semibold">UMass Amherst</p></article>
+      </div>
+    </section>
+    <section id="page-robotics" class="page-section">
+      <!-- EDIT HERE: Update the robotics section heading and summary text. -->
+      <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Student design team</p><h1 class="text-4xl md:text-5xl font-bold mb-4">UMass Robotics Research Team</h1></div>
+      <div class="grid lg:grid-cols-2 gap-6">
+        <!-- EDIT HERE: Replace the placeholder photo and robotics card text. -->
+        <article class="card overflow-hidden"><div class="placeholder"><p class="text-sm">Add quadruped photo or CAD render here</p></div><div class="p-6"><h2 class="text-2xl font-bold">Quadruped robotics</h2></div></article>
+        <!-- EDIT HERE: Replace the placeholder photo and text for the second robotics card. -->
+        <article class="card overflow-hidden"><div class="placeholder"><p class="text-sm">Add humanoid robot photo or CAD render here</p></div><div class="p-6"><h2 class="text-2xl font-bold">Humanoid robotics</h2></div></article>
+      </div>
+    </section>
+    <section id="page-fsae" class="page-section">
+      <!-- EDIT HERE: Update the FSAE heading and summary text. -->
+      <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Student design team · Fall 2024 – Present</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Minutemen Racing</h1></div>
+      <div class="grid lg:grid-cols-[.8fr_1.2fr] gap-8 items-start">
+        <!-- EDIT HERE: Replace this placeholder with a racecar or chassis photo. -->
+        <div class="placeholder min-h-[390px]"><p class="text-sm">Add racecar / chassis photo here</p></div>
+        <!-- EDIT HERE: Replace this project description with your FSAE work summary. -->
+        <div class="card p-6 md:p-8"><h2 class="text-2xl font-bold">Project description</h2><p class="text-[#5d6873] mt-4">Add the project goal, your responsibilities, design decisions, results, and lessons learned.</p></div>
+      </div>
+    </section>
+    <section id="page-projects" class="page-section">
+      <!-- EDIT HERE: Update project section intro text. -->
+      <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Personal work</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Projects</h1><p class="text-lg text-[#5d6873]">Personal engineering projects and experiments.</p></div>
+      <div class="grid lg:grid-cols-2 gap-6">
+        <!-- EDIT HERE: Replace this project card with your real project title, image, and description. -->
+        <article class="card overflow-hidden"><div class="placeholder"><p class="text-sm">Add project image here</p></div><div class="p-6"><p class="eyebrow">Personal project</p><h2 class="text-2xl font-bold mt-2">Project title</h2><p class="text-[#5d6873] mt-3">Explain what you built, the problem it solves, the tools you used, and the result.</p></div></article>
+        <!-- EDIT HERE: Duplicate this project card for more items or replace it with another project. -->
+        <article class="card overflow-hidden"><div class="placeholder"><p class="text-sm">Add project image here</p></div><div class="p-6"><p class="eyebrow">Personal project</p><h2 class="text-2xl font-bold mt-2">Project title</h2><p class="text-[#5d6873] mt-3">Explain what you built, the problem it solves, the tools you used, and the result.</p></div></article>
+      </div>
+    </section>
   </main>
-  <footer class="border-t border-[#dfe2df] mt-8"><div class="max-w-6xl mx-auto px-5 lg:px-8 py-8 flex flex-col sm:flex-row justify-between gap-5"><div><p class="font-bold">Marco Vital</p><p class="text-sm text-[#5d6873]">Mechanical engineering portfolio</p></div><div class="flex flex-col sm:items-end gap-2 text-sm text-[#5d6873]"><a href="mailto:marcojvital@gmail.com" aria-label="Email Marco Vital" class="inline-flex items-center gap-2 hover:text-[#164e63]"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>marcojvital@gmail.com</span></a><a href="tel:+14135405887" aria-label="Call Marco Vital" class="inline-flex items-center gap-2 hover:text-[#164e63]"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>(413) 540-5887</span></a></div></div></footer>
+  <footer class="border-t border-[#dfe2df] mt-8"><div class="max-w-6xl mx-auto px-5 lg:px-8 py-8 flex flex-col sm:flex-row justify-between gap-5"><div><p class="font-bold">Marco Vital</p><p class="text-sm text-[#5d6873]">Mechanical engineering portfolio</p></div>
+    <!-- EDIT HERE: Update both email and phone links and displayed values. -->
+    <div class="flex flex-col sm:items-end gap-2 text-sm text-[#5d6873]"><a href="mailto:marcojvital@gmail.com" aria-label="Email Marco Vital" class="inline-flex items-center gap-2 hover:text-[#164e63]"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>marcojvital@gmail.com</span></a><a href="tel:+14135405887" aria-label="Call Marco Vital" class="inline-flex items-center gap-2 hover:text-[#164e63]"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>(413) 540-5887</span></a></div>
+  </div></footer>
   <script>
     const pages=['home','skills','experience','robotics','fsae','projects'];
     function switchPage(page, updateHash=true){ if(!pages.includes(page)) page='home'; pages.forEach(item=>{document.getElementById('page-'+item).classList.toggle('active-page',item===page);const nav=document.getElementById('nav-'+item);if(nav) nav.classList.toggle('active',item===page);});document.body.classList.remove('menu-open');if(updateHash) history.replaceState(null,'','#'+page);window.scrollTo({top:0,behavior:'smooth'}); }
