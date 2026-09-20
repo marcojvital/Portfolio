@@ -105,15 +105,9 @@
     </section>
 
     <section id="page-timeline" class="page-section">
-      <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Engineering journey</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Progress, one build at a time.</h1><p class="text-lg text-[#5d6873]">A quick look at the milestones shaping my path in mechanical engineering.</p></div>
-      <div class="relative pl-10">
-        <div class="timeline-line" aria-hidden="true"></div>
-        <article class="relative mb-8"><span class="timeline-dot" aria-hidden="true"></span><div class="card p-6 md:p-8"><p class="eyebrow">Fall 2024 · Student design team</p><h2 class="text-2xl font-bold mt-2">Minutemen Racing</h2><p class="mt-4 text-[#5d6873] leading-relaxed">Joined the Formula-style student team to build, test, and improve a racecar through iterative engineering work.</p></div></article>
-        <article class="relative mb-8"><span class="timeline-dot" aria-hidden="true"></span><div class="card p-6 md:p-8"><p class="eyebrow">Fall 2025 · Manufacturing</p><h2 class="text-2xl font-bold mt-2">Hands-on production experience</h2><p class="mt-4 text-[#5d6873] leading-relaxed">Built practical manufacturing and fabrication experience while contributing to real-world engineering workflows.</p></div></article>
-        <article class="relative"><span class="timeline-dot" aria-hidden="true"></span><div class="card p-6 md:p-8"><p class="eyebrow">July 2026 · Boston Dynamics</p><h2 class="text-2xl font-bold mt-2">Atlas Actuator Team Co-op</h2><p class="mt-4 text-[#5d6873] leading-relaxed">Working on actuator system design and development in a robotics environment focused on reliability and performance.</p></div></article>
-        <article class="relative"><span class="timeline-dot" aria-hidden="true"></span><div class="card p-6 md:p-8"><p class="eyebrow">July 2026 · Boston Dynamics</p><h2 class="text-2xl font-bold mt-2">Atlas Actuator Team Co-op</h2><p class="mt-4 text-[#5d6873] leading-relaxed">Working on actuator system design and development in a robotics environment focused on reliability and performance.</p></div></article>
-        <article class="relative"><span class="timeline-dot" aria-hidden="true"></span><div class="card p-6 md:p-8"><p class="eyebrow">July 2026 · Boston Dynamics</p><h2 class="text-2xl font-bold mt-2">Atlas Actuator Team Co-op</h2><p class="mt-4 text-[#5d6873] leading-relaxed">Working on actuator system design and development in a robotics environment focused on reliability and performance.</p></div></article>
-        <article class="relative"><span class="timeline-dot" aria-hidden="true"></span><div class="card p-6 md:p-8"><p class="eyebrow">July 2026 · Boston Dynamics</p><h2 class="text-2xl font-bold mt-2">Atlas Actuator Team Co-op</h2><p class="mt-4 text-[#5d6873] leading-relaxed">Working on actuator system design and development in a robotics environment focused on reliability and performance.</p></div></article>
+      <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Engineering journey</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Progress, one build at a time.</h1></div>
+      <div class="card p-8 md:p-12 text-center">
+        <p class="eyebrow mb-3">Timeline</p>
       </div>
     </section>
   </main>
