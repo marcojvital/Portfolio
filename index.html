@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marco Vital | Mechanical Engineering</title>
+  <meta http-equiv="refresh" content="0; url=https://raw.githubusercontent.com/marcojvital/Portfolio/main/README.md">
+  <script>
+    // README.md contains the portfolio's HTML. Load it as HTML instead of
+    // allowing the browser to display the source document as plain text.
+    fetch('https://raw.githubusercontent.com/marcojvital/Portfolio/main/README.md')
+      .then(response => {
+        if (!response.ok) throw new Error('Unable to load portfolio');
+        return response.text();
+      })
+      .then(html => {
+        document.open();
+        document.write(html);
+        document.close();
+      })
+      .catch(() => {
+        document.body.innerHTML = '<p style="font-family: sans-serif; padding: 2rem">The portfolio could not be loaded. Please refresh the page.</p>';
+      });
+  </script>
+</head>
+<body>
+  <p style="font-family: sans-serif; padding: 2rem">Loading portfolio…</p>
+</body>
+</html>
