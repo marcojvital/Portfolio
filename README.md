@@ -68,8 +68,6 @@
           <p class="text-lg text-[#5d6873] leading-relaxed max-w-xl mb-8">PROJECT DESCRIPTION — Replace this text with a short introduction about yourself, your interests, and the type of engineering work you want to do.</p>
           <div class="flex flex-wrap gap-3">
             <button onclick="switchPage('experience')" class="bg-[#164e63] text-white px-5 py-3 rounded-sm font-semibold hover:bg-[#0f3c4c]">See my experience <i class="fa-solid fa-arrow-right ml-2"></i></button>
-            <!-- EDIT HERE: Replace the email address in the mailto link. -->
-            <a href="mailto:marcojvital@gmail.com" class="border border-[#aebbb9] px-5 py-3 rounded-sm font-semibold hover:bg-white">Get in touch</a>
           </div>
           <p class="mt-8 text-sm text-[#5d6873]"><i class="fa-solid fa-location-dot mr-2 text-[#c65d32]"></i>Ludlow, Massachusetts · Expected May 2028</p>
         </div>
@@ -94,7 +92,7 @@
         <article class="card p-6 md:p-8"><h2 class="text-2xl font-bold">Design</h2><ul class="mt-5 space-y-5"><li><h3 class="font-semibold">SKILL OR TOOL</h3><p class="text-[#5d6873] text-sm mt-1">SKILL DESCRIPTION — Explain what you can design or how you use this skill.</p></li><li><h3 class="font-semibold">SKILL OR TOOL</h3><p class="text-[#5d6873] text-sm mt-1">SKILL DESCRIPTION — Add a brief example, application, or level of experience.</p></li></ul></article>
         <article class="card p-6 md:p-8"><h2 class="text-2xl font-bold">Engineering Tools</h2><ul class="mt-5 space-y-5"><li><h3 class="font-semibold">SOFTWARE OR TOOL</h3><p class="text-[#5d6873] text-sm mt-1">SKILL DESCRIPTION — Explain what you use this software or tool for.</p></li><li><h3 class="font-semibold">SOFTWARE OR TOOL</h3><p class="text-[#5d6873] text-sm mt-1">SKILL DESCRIPTION — Add a brief example, application, or level of experience.</p></li></ul></article>
         <article class="card p-6 md:p-8"><h2 class="text-2xl font-bold">Manufacturing</h2><ul class="mt-5 space-y-5"><li><h3 class="font-semibold">PROCESS OR METHOD</h3><p class="text-[#5d6873] text-sm mt-1">SKILL DESCRIPTION — Describe your hands-on experience with this process.</p></li><li><h3 class="font-semibold">PROCESS OR METHOD</h3><p class="text-[#5d6873] text-sm mt-1">SKILL DESCRIPTION — Add a brief example, application, or level of experience.</p></li></ul></article>
-        <article class="card p-6 md:p-8"><h2 class="text-2xl font-bold">Programming & Automation</h2><ul class="mt-5 space-y-5"><li><h3 class="font-semibold">LANGUAGE OR TOOL</h3><p class="text-[#5d6873] text-sm mt-1">SKILL DESCRIPTION — Explain what you build, analyze, or automate with it.</p></li><li><h3 class="font-semibold">LANGUAGE OR TOOL</h3><p class="text-[#5d6873] text-sm mt-1">SKILL DESCRIPTION — Add a brief example, application, or level of experience.</p></li></ul></article>
+        <article class="card p-6 md:p-8"><h2 class="text-2xl font-bold">Programming</h2><ul class="mt-5 space-y-5"><li><h3 class="font-semibold">LANGUAGE OR TOOL</h3><p class="text-[#5d6873] text-sm mt-1">SKILL DESCRIPTION — Explain what you build or analyze with it.</p></li><li><h3 class="font-semibold">LANGUAGE OR TOOL</h3><p class="text-[#5d6873] text-sm mt-1">SKILL DESCRIPTION — Add a brief example, application, or level of experience.</p></li></ul></article>
       </div>
     </section>
 
@@ -145,6 +143,7 @@
         <p class="font-bold">Marco Vital</p>
         <p class="text-sm text-[#5d6873]">Mechanical Engineering Portfolio</p>
       </div>
+      <!-- These links are verified: email uses mailto; phone uses tel. Edit both displayed and href values together if needed. -->
       <div class="flex flex-col sm:items-end gap-2 text-sm text-[#5d6873]">
         <a href="mailto:marcojvital@gmail.com" class="inline-flex items-center gap-2 hover:text-[#164e63]"><i class="fa-solid fa-envelope"></i>marcojvital@gmail.com</a>
         <a href="tel:+14135405887" class="inline-flex items-center gap-2 hover:text-[#164e63]"><i class="fa-solid fa-phone"></i>(413) 540-5887</a>
