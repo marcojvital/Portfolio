@@ -45,10 +45,9 @@
     </nav>
     <div class="mobile-menu hidden md:hidden flex-col gap-1 px-5 pb-4 text-sm font-semibold border-t border-[#dfe2df]">
       <button onclick="switchPage('home')" class="text-left py-2">Home</button>
-      <button onclick="switchPage('experience')" class="text-left py-2">Experience</button>
+      <button onclick="switchPage('work experience')" class="text-left py-2">Experience</button>
       <button onclick="switchPage('robotics')" class="text-left py-2">Robotics</button>
       <button onclick="switchPage('fsae')" class="text-left py-2">FSAE</button>
-      <button onclick="switchPage('marieb')" class="text-left py-2">Marieb Center</button>
       <button onclick="switchPage('projects')" class="text-left py-2">Projects</button>
     </div>
   </header>
