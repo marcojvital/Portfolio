@@ -139,7 +139,18 @@
     </section>
   </main>
 
-  <footer class="border-t border-[#dfe2df] mt-8"><div class="max-w-6xl mx-auto px-5 lg:px-8 py-8 flex flex-col sm:flex-row justify-between gap-5"><div><p class="font-bold">Marco Vital</p><p class="text-sm text-[#5d6873]">Mechanical Engineering Portfolio</p></div><p class="text-sm text-[#5d6873]">© 2026 Marco Vital</p></div></footer>
+  <footer class="border-t border-[#dfe2df] mt-8">
+    <div class="max-w-6xl mx-auto px-5 lg:px-8 py-8 flex flex-col sm:flex-row justify-between gap-5">
+      <div>
+        <p class="font-bold">Marco Vital</p>
+        <p class="text-sm text-[#5d6873]">Mechanical Engineering Portfolio</p>
+      </div>
+      <div class="flex flex-col sm:items-end gap-2 text-sm text-[#5d6873]">
+        <a href="mailto:marcojvital@gmail.com" class="inline-flex items-center gap-2 hover:text-[#164e63]"><i class="fa-solid fa-envelope"></i>marcojvital@gmail.com</a>
+        <a href="tel:+14135405887" class="inline-flex items-center gap-2 hover:text-[#164e63]"><i class="fa-solid fa-phone"></i>(413) 540-5887</a>
+      </div>
+    </div>
+  </footer>
 
   <script>
     const pages=['home','skills','experience','robotics','fsae','projects'];
