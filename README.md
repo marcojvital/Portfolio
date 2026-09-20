@@ -1,4 +1,3 @@
-@@ -1,129 +0,0 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
