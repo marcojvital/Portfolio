@@ -203,7 +203,7 @@
         <p class="text-sm text-[#5d6873]">Mechanical engineering student</p>
       </div>
       <div class="flex flex-col items-start sm:items-end text-sm text-[#5d6873] gap-2">
-        <a href="mailto:marcovital@umass.edu" class="inline-flex items-center gap-2 hover:text-[#164e63]"><i class="fa-solid fa-envelope"></i>marcovital@umass.edu</a>
+        <a href="mailto:mjvital@umass.edu" class="inline-flex items-center gap-2 hover:text-[#164e63]"><i class="fa-solid fa-envelope"></i>mjvital@umass.edu</a>
         <a href="tel:+14133357760" class="inline-flex items-center gap-2 hover:text-[#164e63]"><i class="fa-solid fa-phone"></i>(413)-335-7760</a>
       </div>
     </div>
