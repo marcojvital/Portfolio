@@ -66,7 +66,7 @@
   <main class="max-w-6xl mx-auto px-5 lg:px-8 py-12 md:py-20">
     <section id="page-home" class="page-section active-page">
       <div class="max-w-3xl">
-        <p class="eyebrow mb-5">Mechanical engineering student · UMass Amherst</p>
+        <p class="eyebrow mb-5">Mechanical Engineering @ UMass Amherst</p>
         <h1 class="text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-6">I build useful systems, learn fast, and keep improving the design.</h1>
         <p class="text-lg text-[#5d6873] mb-8 max-w-xl">I’m Marco Vital, a mechanical engineering student focused on robotics, design, and manufacturing. I’m interested in developing products that are practical, efficient, and grounded in real-world testing.</p>
         <div class="flex flex-wrap gap-4">
@@ -75,7 +75,6 @@
         </div>
       </div>
     </section>
-
     <section id="page-experience" class="page-section">
       <div class="max-w-3xl mb-12">
         <p class="eyebrow mb-3">Experience</p>
@@ -95,7 +94,6 @@
         </article>
       </div>
     </section>
-
     <section id="page-robotics" class="page-section">
       <div class="max-w-3xl mb-12">
         <p class="eyebrow mb-3">Student design team</p>
@@ -106,7 +104,6 @@
         <p class="text-[#5d6873]">This work focuses on mechatronic problem solving, prototype iteration, and practical engineering decision-making in dynamic environments.</p>
       </div>
     </section>
-
     <section id="page-fsae" class="page-section">
       <div class="max-w-3xl mb-12">
         <p class="eyebrow mb-3">Student design team · Fall 2024 — Present</p>
@@ -117,7 +114,6 @@
         <p class="text-[#5d6873]">This project has strengthened my understanding of manufacturing constraints, design tradeoffs, and the importance of test-driven iteration.</p>
       </div>
     </section>
-
     <section id="page-projects" class="page-section">
       <div class="max-w-3xl mb-12">
         <p class="eyebrow mb-3">Personal work</p>
@@ -135,7 +131,6 @@
         </article>
       </div>
     </section>
-
     <section id="page-skills" class="page-section">
       <div class="max-w-3xl mb-12">
         <p class="eyebrow mb-3">Capabilities</p>
@@ -148,7 +143,6 @@
         <article class="card p-6"><h2 class="text-xl font-bold mb-2">Analysis</h2><p class="text-[#5d6873]">Performance-driven engineering decisions</p></article>
       </div>
     </section>
-
     <section id="page-timeline" class="page-section">
       <div class="max-w-3xl mb-12">
         <p class="eyebrow mb-3">Engineering journey</p>
