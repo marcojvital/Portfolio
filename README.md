@@ -23,6 +23,7 @@
     .card { background:#fff; border:1px solid var(--line); border-radius:4px; }
     .card:hover { border-color:#aebbb9; }
     .placeholder { min-height:220px; border:1px dashed #aebbb9; background:#eef1ee; color:#74817f; display:flex; align-items:center; justify-content:center; text-align:center; }
+    .photo-placeholder { min-height:420px; border:1px solid var(--line); border-radius:8px; background:linear-gradient(135deg, #eef1ee, #f7f6f2); display:flex; align-items:center; justify-content:center; color:#74817f; text-transform:uppercase; letter-spacing:.12em; font-size:.72rem; font-weight:700; }
     .eyebrow { color:var(--orange); letter-spacing:.06em; font-size:.75rem; font-weight:700; }
     .menu-open .mobile-menu { display:flex; }
     .timeline-line { position:absolute; left:1rem; top:1rem; bottom:1rem; width:2px; background:var(--line); }
@@ -65,14 +66,16 @@
 
   <main class="max-w-6xl mx-auto px-5 lg:px-8 py-12 md:py-20">
     <section id="page-home" class="page-section active-page">
-      <div class="max-w-3xl">
-        <p class="eyebrow mb-5">Mechanical Engineering @ UMass Amherst</p>
-        <h1 class="text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-6">I build useful systems, learn fast, and keep improving the design.</h1>
-        <p class="text-lg text-[#5d6873] mb-8 max-w-xl">I’m Marco Vital, a mechanical engineering student focused on robotics, design, and manufacturing. I’m interested in developing products that are practical, efficient, and grounded in real-world testing.</p>
-        <div class="flex flex-wrap gap-4">
-          <button onclick="switchPage('projects')" class="bg-[#164e63] text-white px-5 py-3 rounded font-semibold">View projects</button>
-          <button onclick="switchPage('timeline')" class="border border-[#dfe2df] bg-white px-5 py-3 rounded font-semibold">See timeline</button>
+      <div class="grid md:grid-cols-[1.1fr_.9fr] gap-12 items-center">
+        <div>
+          <p class="eyebrow mb-5">Mechanical Engineering @ UMass Amherst</p>
+          <h1 class="text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-6">I build useful systems, learn fast, and keep improving the design.</h1>
+          <div class="flex flex-wrap gap-4">
+            <button onclick="switchPage('projects')" class="bg-[#164e63] text-white px-5 py-3 rounded font-semibold">View projects</button>
+            <button onclick="switchPage('timeline')" class="border border-[#dfe2df] bg-white px-5 py-3 rounded font-semibold">See timeline</button>
+          </div>
         </div>
+        <div class="photo-placeholder">Picture Placeholder</div>
       </div>
     </section>
     <section id="page-experience" class="page-section">
