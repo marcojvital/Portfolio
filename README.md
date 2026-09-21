@@ -53,9 +53,12 @@
         <div class="timeline-line"></div>
         <!-- Duplicate or remove these blank entries as your timeline grows. -->
         <article class="relative card p-6 md:p-8 mb-6"><div class="timeline-dot"></div><p class="eyebrow">July 2026 - Present</p><h2 class="text-2xl font-bold mt-1">Atlas Actuation Co-op</h2><p class="text-[#164e63] font-semibold mt-1">Boston Dynamics</p></article>
+        <article class="relative card p-6 md:p-8 mb-6"><div class="timeline-dot"></div><p class="eyebrow">September 2025 - May 2026</p><h2 class="text-2xl font-bold mt-1">Sophomore Year</h2><p class="text-[#164e63] font-semibold mt-1">UMass Amherst</p></article>
         <article class="relative card p-6 md:p-8 mb-6"><div class="timeline-dot"></div><p class="eyebrow">July 2025 - May 2026</p><h2 class="text-2xl font-bold mt-1">Leg Design Lead</h2><p class="text-[#164e63] font-semibold mt-1">UMass Robotics Club</p></article>
         <article class="relative card p-6 md:p-8 mb-6"><div class="timeline-dot"></div><p class="eyebrow">June 2025 - August 2026</p><h2 class="text-2xl font-bold mt-1">Chassis Engineering Captain</h2><p class="text-[#164e63] font-semibold mt-1">Minutemen Racing</p></article>
-        <article class="relative card p-6 md:p-8 mb-6"><div class="timeline-dot"></div><p class="eyebrow">May 2025 - August 2025</p><h2 class="text-2xl font-bold mt-1">Engineering Resarch Intern (Year 3)</h2><p class="text-[#164e63] font-semibold mt-1">Elaine Marieb Center</p></article>
+        <article class="relative card p-6 md:p-8 mb-6"><div class="timeline-dot"></div><p class="eyebrow">May 2025 - August 2025</p><h2 class="text-2xl font-bold mt-1">Summer Resarch Intern (Year 3)</h2><p class="text-[#164e63] font-semibold mt-1">Elaine Marieb Center</p></article>
+        <article class="relative card p-6 md:p-8 mb-6"><div class="timeline-dot"></div><p class="eyebrow">October 2024 - May 2025</p><h2 class="text-2xl font-bold mt-1">Chassis Subteam Member</h2><p class="text-[#164e63] font-semibold mt-1">Minutemen Racing</p></article>
+        <article class="relative card p-6 md:p-8 mb-6"><div class="timeline-dot"></div><p class="eyebrow">September 2024 - May 2025</p><h2 class="text-2xl font-bold mt-1">Freshman Year</h2><p class="text-[#164e63] font-semibold mt-1">UMass Amherst</p></article>
       </div>
     </section>
   </main>
