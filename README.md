@@ -69,7 +69,8 @@
       <div class="grid md:grid-cols-[1.1fr_.9fr] gap-12 items-center">
         <div>
           <p class="eyebrow mb-5">Mechanical Engineering @ UMass Amherst</p>
-          <h1 class="text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-6">I build useful systems, learn fast, and keep improving the design.</h1>
+          <h1 class="text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-4">Marco Vital</h1>
+          <p class="text-lg text-[#5d6873] mb-6">Currently working with UMass Robotics and Formula SAE.</p>
           <div class="flex flex-wrap gap-4">
             <button onclick="switchPage('projects')" class="bg-[#164e63] text-white px-5 py-3 rounded font-semibold">View projects</button>
             <button onclick="switchPage('timeline')" class="border border-[#dfe2df] bg-white px-5 py-3 rounded font-semibold">See timeline</button>
