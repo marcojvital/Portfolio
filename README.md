@@ -43,6 +43,8 @@
     .timeline-theme-school { --topic-color:var(--maroon); }
     .timeline-theme-bd { --topic-color:var(--bd-blue); }
     .timeline-theme-fsae { --topic-color:var(--fsae-tan); }
+    .mobile-menu { display:flex; }
+    #menu-button { display:none; }
   </style>
 </head>
 <body>
@@ -54,7 +56,7 @@
       </div>
       <button id="menu-button" class="md:hidden text-xl p-2" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
     </nav>
-    <div class="mobile-menu hidden md:hidden flex-col gap-1 px-5 pb-4 text-sm font-semibold border-t border-[#dfe2df]"><button onclick="switchPage('home')" class="text-left py-2">Home</button><button onclick="switchPage('timeline')" class="text-left py-2">Timeline</button><button onclick="switchPage('experience')" class="text-left py-2">Experience</button><button onclick="switchPage('robotics')" class="text-left py-2">Robotics</button><button onclick="switchPage('fsae')" class="text-left py-2">FSAE</button><button onclick="switchPage('projects')" class="text-left py-2">Projects</button><button onclick="switchPage('skills')" class="text-left py-2">Skills</button></div>
+    <div class="mobile-menu md:hidden flex-col gap-1 px-5 pb-4 text-sm font-semibold border-t border-[#dfe2df]"><button onclick="switchPage('home')" class="text-left py-2">Home</button><button onclick="switchPage('timeline')" class="text-left py-2">Timeline</button><button onclick="switchPage('experience')" class="text-left py-2">Experience</button><button onclick="switchPage('robotics')" class="text-left py-2">Robotics</button><button onclick="switchPage('fsae')" class="text-left py-2">FSAE</button><button onclick="switchPage('projects')" class="text-left py-2">Projects</button><button onclick="switchPage('skills')" class="text-left py-2">Skills</button></div>
   </header>
 
   <main class="max-w-6xl mx-auto px-5 lg:px-8 py-12 md:py-20">
@@ -78,7 +80,7 @@
     </section>
   </main>
 
-  <footer class="border-t border-[#dfe2df] mt-8"><div class="max-w-6xl mx-auto px-5 lg:px-8 py-8 flex flex-col sm:flex-row justify-between gap-5"><div><p class="font-bold">Marco Vital</p><p class="text-[#5d6873]">Mechanical engineering student</p></div><div class="text-[#5d6873] text-sm">Contact and portfolio links can go here.</div></div></footer>
+  <footer class="border-t border-[#dfe2df] mt-8"><div class="max-w-6xl mx-auto px-5 lg:px-8 py-8 flex flex-col sm:flex-row justify-between gap-5"><div><p class="font-bold">Marco Vital</p><p class="text-[#5d6873]">Mechanical engineering student</p></div><div class="text-[#5d6873] text-sm text-left sm:text-right"><p>Email: [your email]</p><p>Phone: [your phone number]</p></div></div></footer>
   <script>
     const pages=['home','timeline','experience','robotics','fsae','projects','skills'];
     function switchPage(page, updateHash=true){ if(!pages.includes(page)) page='home'; pages.forEach(item=>{document.getElementById('page-'+item).classList.toggle('active-page',item===page); const nav=document.getElementById('nav-'+item); if(nav) nav.classList.toggle('active',item===page);}); if(updateHash) history.replaceState(null,'', '#'+page); }
