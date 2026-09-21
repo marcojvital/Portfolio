@@ -33,7 +33,7 @@
       top: 0;
       right: 0;
       bottom: 0;
-      width: 4px;
+      width: 12px;
       background: var(--topic-color);
       border-radius: 0 4px 4px 0;
     }
