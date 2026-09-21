@@ -44,7 +44,7 @@
       <div class="hidden md:flex items-center gap-7 text-sm font-semibold">
         <button onclick="switchPage('home')" id="nav-home" class="nav-link active py-2">Home</button>
         <button onclick="switchPage('timeline')" id="nav-timeline" class="nav-link py-2">Timeline</button>
-        <button onclick="switchPage('experience')" id="nav-experience" class="nav-link py-2">Experience</button>
+        <button onclick="switchPage('experience')" id="nav-experience" class="nav-link py-2">Work Experience</button>
         <button onclick="switchPage('robotics')" id="nav-robotics" class="nav-link py-2">Robotics</button>
         <button onclick="switchPage('fsae')" id="nav-fsae" class="nav-link py-2">FSAE</button>
         <button onclick="switchPage('projects')" id="nav-projects" class="nav-link py-2">Projects</button>
