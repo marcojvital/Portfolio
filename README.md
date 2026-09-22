@@ -79,6 +79,7 @@
         <div class="photo-placeholder">Picture Placeholder</div>
       </div>
     </section>
+
     <section id="page-experience" class="page-section">
       <div class="max-w-3xl mb-12">
         <p class="eyebrow mb-3">Work experience</p>
@@ -92,13 +93,38 @@
       <div>
         <p class="eyebrow mb-3">Elaine Marieb</p>
         <h2 class="text-3xl font-bold mb-6">Placeholder experience</h2>
-        <div class="grid md:grid-cols-3 gap-6">
-          <article class="card p-6"><p class="eyebrow mb-2">2025</p><h3 class="text-xl font-bold mb-3">Placeholder</h3><p class="text-[#5d6873]">Placeholder for 2025 details.</p></article>
-          <article class="card p-6"><p class="eyebrow mb-2">2024</p><h3 class="text-xl font-bold mb-3">Placeholder</h3><p class="text-[#5d6873]">Placeholder for 2024 details.</p></article>
-          <article class="card p-6"><p class="eyebrow mb-2">2023</p><h3 class="text-xl font-bold mb-3">Placeholder</h3><p class="text-[#5d6873]">Placeholder for 2023 details.</p></article>
+        <div class="space-y-6">
+          <article class="card p-6">
+            <p class="eyebrow mb-2">2025</p>
+            <h3 class="text-xl font-bold mb-3">Placeholder</h3>
+            <p class="text-[#5d6873] mb-5">Placeholder for 2025 details.</p>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="placeholder">Picture placeholder 1</div>
+              <div class="placeholder">Picture placeholder 2</div>
+            </div>
+          </article>
+          <article class="card p-6">
+            <p class="eyebrow mb-2">2024</p>
+            <h3 class="text-xl font-bold mb-3">Placeholder</h3>
+            <p class="text-[#5d6873] mb-5">Placeholder for 2024 details.</p>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="placeholder">Picture placeholder 1</div>
+              <div class="placeholder">Picture placeholder 2</div>
+            </div>
+          </article>
+          <article class="card p-6">
+            <p class="eyebrow mb-2">2023</p>
+            <h3 class="text-xl font-bold mb-3">Placeholder</h3>
+            <p class="text-[#5d6873] mb-5">Placeholder for 2023 details.</p>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="placeholder">Picture placeholder 1</div>
+              <div class="placeholder">Picture placeholder 2</div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
+
     <section id="page-robotics" class="page-section">
       <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Student design team</p><h1 class="text-4xl md:text-5xl font-bold mb-4">UMass Robotics Research</h1><p class="text-lg text-[#5d6873]">Working on robotics systems and design challenges that require both precision and adaptability.</p></div>
       <div class="card p-8"><p class="text-[#5d6873]">This work focuses on mechatronic problem solving, prototype iteration, and practical engineering decision-making in dynamic environments.</p></div>
@@ -129,6 +155,7 @@
       </div>
     </section>
   </main>
+
   <footer class="border-t border-[#dfe2df] mt-8"><div class="max-w-6xl mx-auto px-5 lg:px-8 py-8 flex flex-col sm:flex-row justify-between gap-5"><div><p class="font-bold">Marco Vital</p><p class="text-sm text-[#5d6873]">Mechanical engineering student</p></div><div class="flex flex-col items-start sm:items-end text-sm text-[#5d6873] gap-2"><a href="mailto:mjvital@umass.edu" class="inline-flex items-center gap-2 hover:text-[#164e63]"><i class="fa-solid fa-envelope"></i>mjvital@umass.edu</a><a href="tel:+14133357760" class="inline-flex items-center gap-2 hover:text-[#164e63]"><i class="fa-solid fa-phone"></i>(413)-335-7760</a></div></div></footer>
   <script>
     const pages=['home','timeline','experience','robotics','fsae','projects','skills'];
