@@ -81,157 +81,61 @@
     </section>
     <section id="page-experience" class="page-section">
       <div class="max-w-3xl mb-12">
-        <p class="eyebrow mb-3">Experience</p>
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Building things, then learning from the results.</h1>
-        <p class="text-lg text-[#5d6873]">My engineering work has centered on design teams, applied research, and hands-on problem solving across mechanical systems.</p>
+        <p class="eyebrow mb-3">Work experience</p>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Work Experience</h1>
       </div>
-      <div class="grid md:grid-cols-2 gap-6">
-        <article class="card p-6">
-          <p class="eyebrow mb-2">UMass Robotics Research</p>
-          <h2 class="text-2xl font-bold mb-3">Student researcher</h2>
-          <p class="text-[#5d6873]">Contributed to robotics-focused design and testing work, improving systems through iterative development and technical analysis.</p>
-        </article>
-        <article class="card p-6">
-          <p class="eyebrow mb-2">FSAE</p>
-          <h2 class="text-2xl font-bold mb-3">Vehicle systems member</h2>
-          <p class="text-[#5d6873]">Participating in a high-performance engineering environment focused on collaboration, manufacturing, and track-driven refinement.</p>
-        </article>
+      <div class="card p-6 md:p-8 mb-8">
+        <p class="eyebrow mb-2">Boston Dynamics</p>
+        <h2 class="text-2xl font-bold mb-3">Placeholder role</h2>
+        <p class="text-[#5d6873]">Placeholder for Boston Dynamics work experience details.</p>
+      </div>
+      <div>
+        <p class="eyebrow mb-3">Elaine Marieb</p>
+        <h2 class="text-3xl font-bold mb-6">Placeholder experience</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <article class="card p-6"><p class="eyebrow mb-2">2025</p><h3 class="text-xl font-bold mb-3">Placeholder</h3><p class="text-[#5d6873]">Placeholder for 2025 details.</p></article>
+          <article class="card p-6"><p class="eyebrow mb-2">2024</p><h3 class="text-xl font-bold mb-3">Placeholder</h3><p class="text-[#5d6873]">Placeholder for 2024 details.</p></article>
+          <article class="card p-6"><p class="eyebrow mb-2">2023</p><h3 class="text-xl font-bold mb-3">Placeholder</h3><p class="text-[#5d6873]">Placeholder for 2023 details.</p></article>
+        </div>
       </div>
     </section>
     <section id="page-robotics" class="page-section">
-      <div class="max-w-3xl mb-12">
-        <p class="eyebrow mb-3">Student design team</p>
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">UMass Robotics Research</h1>
-        <p class="text-lg text-[#5d6873]">Working on robotics systems and design challenges that require both precision and adaptability.</p>
-      </div>
-      <div class="card p-8">
-        <p class="text-[#5d6873]">This work focuses on mechatronic problem solving, prototype iteration, and practical engineering decision-making in dynamic environments.</p>
-      </div>
+      <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Student design team</p><h1 class="text-4xl md:text-5xl font-bold mb-4">UMass Robotics Research</h1><p class="text-lg text-[#5d6873]">Working on robotics systems and design challenges that require both precision and adaptability.</p></div>
+      <div class="card p-8"><p class="text-[#5d6873]">This work focuses on mechatronic problem solving, prototype iteration, and practical engineering decision-making in dynamic environments.</p></div>
     </section>
     <section id="page-fsae" class="page-section">
-      <div class="max-w-3xl mb-12">
-        <p class="eyebrow mb-3">Student design team · Fall 2024 — Present</p>
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Formula SAE</h1>
-        <p class="text-lg text-[#5d6873]">Designing and refining a competitive student race vehicle with a strong emphasis on systems integration and performance.</p>
-      </div>
-      <div class="card p-8">
-        <p class="text-[#5d6873]">This project has strengthened my understanding of manufacturing constraints, design tradeoffs, and the importance of test-driven iteration.</p>
-      </div>
+      <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Student design team · Fall 2024 — Present</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Formula SAE</h1><p class="text-lg text-[#5d6873]">Designing and refining a competitive student race vehicle with a strong emphasis on systems integration and performance.</p></div>
+      <div class="card p-8"><p class="text-[#5d6873]">This project has strengthened my understanding of manufacturing constraints, design tradeoffs, and the importance of test-driven iteration.</p></div>
     </section>
     <section id="page-projects" class="page-section">
-      <div class="max-w-3xl mb-12">
-        <p class="eyebrow mb-3">Personal work</p>
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Projects</h1>
-        <p class="text-lg text-[#5d6873]">Work across design, making, and technical problem solving.</p>
-      </div>
-      <div class="grid md:grid-cols-2 gap-6">
-        <article class="card p-6">
-          <h2 class="text-2xl font-bold mb-3">Research and prototyping</h2>
-          <p class="text-[#5d6873]">Developing and testing physical systems to evaluate concepts with measurable performance.</p>
-        </article>
-        <article class="card p-6">
-          <h2 class="text-2xl font-bold mb-3">Design tools</h2>
-          <p class="text-[#5d6873]">Using CAD and analysis to turn ideas into realistic, buildable solutions.</p>
-        </article>
-      </div>
+      <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Personal work</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Projects</h1><p class="text-lg text-[#5d6873]">Work across design, making, and technical problem solving.</p></div>
+      <div class="grid md:grid-cols-2 gap-6"><article class="card p-6"><h2 class="text-2xl font-bold mb-3">Research and prototyping</h2><p class="text-[#5d6873]">Developing and testing physical systems to evaluate concepts with measurable performance.</p></article><article class="card p-6"><h2 class="text-2xl font-bold mb-3">Design tools</h2><p class="text-[#5d6873]">Using CAD and analysis to turn ideas into realistic, buildable solutions.</p></article></div>
     </section>
     <section id="page-skills" class="page-section">
-      <div class="max-w-3xl mb-12">
-        <p class="eyebrow mb-3">Capabilities</p>
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Skills</h1>
-        <p class="text-lg text-[#5d6873]">Mechanical design, prototyping, analysis, and communication are at the center of my work.</p>
-      </div>
-      <div class="grid md:grid-cols-3 gap-6">
-        <article class="card p-6"><h2 class="text-xl font-bold mb-2">CAD</h2><p class="text-[#5d6873]">Solid modeling and design iteration</p></article>
-        <article class="card p-6"><h2 class="text-xl font-bold mb-2">Manufacturing</h2><p class="text-[#5d6873]">Build-aware design and practical fabrication</p></article>
-        <article class="card p-6"><h2 class="text-xl font-bold mb-2">Analysis</h2><p class="text-[#5d6873]">Performance-driven engineering decisions</p></article>
-      </div>
+      <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Capabilities</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Skills</h1><p class="text-lg text-[#5d6873]">Mechanical design, prototyping, analysis, and communication are at the center of my work.</p></div>
+      <div class="grid md:grid-cols-3 gap-6"><article class="card p-6"><h2 class="text-xl font-bold mb-2">CAD</h2><p class="text-[#5d6873]">Solid modeling and design iteration</p></article><article class="card p-6"><h2 class="text-xl font-bold mb-2">Manufacturing</h2><p class="text-[#5d6873]">Build-aware design and practical fabrication</p></article><article class="card p-6"><h2 class="text-xl font-bold mb-2">Analysis</h2><p class="text-[#5d6873]">Performance-driven engineering decisions</p></article></div>
     </section>
     <section id="page-timeline" class="page-section">
-      <div class="max-w-3xl mb-12">
-        <p class="eyebrow mb-3">Engineering journey</p>
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Progress, one build at a time.</h1>
-      </div>
+      <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Engineering journey</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Progress, one build at a time.</h1></div>
       <div class="relative pl-10 md:pl-14">
         <div class="timeline-line"></div>
-        <article class="timeline-item timeline-theme-bd relative card p-6 md:p-8 mb-6">
-          <div class="timeline-dot"></div>
-          <p class="eyebrow">July 2026 - Present</p>
-          <h2 class="text-2xl font-bold mt-1">Advanced design work</h2>
-          <p class="text-[#5d6873] mt-3">Continuing hands-on engineering work focused on systems design and product development.</p>
-        </article>
-        <article class="timeline-item timeline-theme-school relative card p-6 md:p-8 mb-6">
-          <div class="timeline-dot"></div>
-          <p class="eyebrow">September 2025 - May 2026</p>
-          <h2 class="text-2xl font-bold mt-1">Academic progression</h2>
-          <p class="text-[#5d6873] mt-3">Deepening technical foundations while continuing to apply them in team-based engineering work.</p>
-        </article>
-        <article class="timeline-item timeline-theme-robotics relative card p-6 md:p-8 mb-6">
-          <div class="timeline-dot"></div>
-          <p class="eyebrow">July 2025 - May 2026</p>
-          <h2 class="text-2xl font-bold mt-1">Robotics research</h2>
-          <p class="text-[#5d6873] mt-3">Working on prototype systems and design challenges with a focus on function and iteration.</p>
-        </article>
-        <article class="timeline-item timeline-theme-fsae relative card p-6 md:p-8 mb-6">
-          <div class="timeline-dot"></div>
-          <p class="eyebrow">June 2025 - August 2026</p>
-          <h2 class="text-2xl font-bold mt-1">FSAE participation</h2>
-          <p class="text-[#5d6873] mt-3">Contributing to a vehicle development cycle centered on evaluation, manufacturing, and performance.</p>
-        </article>
-        <article class="timeline-item relative card p-6 md:p-8 mb-6">
-          <div class="timeline-dot"></div>
-          <p class="eyebrow">May 2025 - August 2025</p>
-          <h2 class="text-2xl font-bold mt-1">Summer research</h2>
-          <p class="text-[#5d6873] mt-3">Continuing practical engineering work and exploring design opportunities in applied settings.</p>
-        </article>
-        <article class="timeline-item timeline-theme-fsae relative card p-6 md:p-8 mb-6">
-          <div class="timeline-dot"></div>
-          <p class="eyebrow">October 2024 - May 2025</p>
-          <h2 class="text-2xl font-bold mt-1">Formula team involvement</h2>
-          <p class="text-[#5d6873] mt-3">Participating in design and build processes while learning from team-based engineering execution.</p>
-        </article>
-        <article class="timeline-item timeline-theme-school relative card p-6 md:p-8 mb-6">
-          <div class="timeline-dot"></div>
-          <p class="eyebrow">September 2024 - May 2025</p>
-          <h2 class="text-2xl font-bold mt-1">UMass engineering studies</h2>
-          <p class="text-[#5d6873] mt-3">Building a foundation in mechanical engineering with a focus on practical application and design thinking.</p>
-        </article>
+        <article class="timeline-item timeline-theme-bd relative card p-6 md:p-8 mb-6"><div class="timeline-dot"></div><p class="eyebrow">July 2026 - Present</p><h2 class="text-2xl font-bold mt-1">Advanced design work</h2><p class="text-[#5d6873] mt-3">Continuing hands-on engineering work focused on systems design and product development.</p></article>
+        <article class="timeline-item timeline-theme-school relative card p-6 md:p-8 mb-6"><div class="timeline-dot"></div><p class="eyebrow">September 2025 - May 2026</p><h2 class="text-2xl font-bold mt-1">Academic progression</h2><p class="text-[#5d6873] mt-3">Deepening technical foundations while continuing to apply them in team-based engineering work.</p></article>
+        <article class="timeline-item timeline-theme-robotics relative card p-6 md:p-8 mb-6"><div class="timeline-dot"></div><p class="eyebrow">July 2025 - May 2026</p><h2 class="text-2xl font-bold mt-1">Robotics research</h2><p class="text-[#5d6873] mt-3">Working on prototype systems and design challenges with a focus on function and iteration.</p></article>
+        <article class="timeline-item timeline-theme-fsae relative card p-6 md:p-8 mb-6"><div class="timeline-dot"></div><p class="eyebrow">June 2025 - August 2026</p><h2 class="text-2xl font-bold mt-1">FSAE participation</h2><p class="text-[#5d6873] mt-3">Contributing to a vehicle development cycle centered on evaluation, manufacturing, and performance.</p></article>
+        <article class="timeline-item relative card p-6 md:p-8 mb-6"><div class="timeline-dot"></div><p class="eyebrow">May 2025 - August 2025</p><h2 class="text-2xl font-bold mt-1">Summer research</h2><p class="text-[#5d6873] mt-3">Continuing practical engineering work and exploring design opportunities in applied settings.</p></article>
+        <article class="timeline-item timeline-theme-fsae relative card p-6 md:p-8 mb-6"><div class="timeline-dot"></div><p class="eyebrow">October 2024 - May 2025</p><h2 class="text-2xl font-bold mt-1">Formula team involvement</h2><p class="text-[#5d6873] mt-3">Participating in design and build processes while learning from team-based engineering execution.</p></article>
+        <article class="timeline-item timeline-theme-school relative card p-6 md:p-8 mb-6"><div class="timeline-dot"></div><p class="eyebrow">September 2024 - May 2025</p><h2 class="text-2xl font-bold mt-1">UMass engineering studies</h2><p class="text-[#5d6873] mt-3">Building a foundation in mechanical engineering with a focus on practical application and design thinking.</p></article>
       </div>
     </section>
   </main>
-
-  <footer class="border-t border-[#dfe2df] mt-8">
-    <div class="max-w-6xl mx-auto px-5 lg:px-8 py-8 flex flex-col sm:flex-row justify-between gap-5">
-      <div>
-        <p class="font-bold">Marco Vital</p>
-        <p class="text-sm text-[#5d6873]">Mechanical engineering student</p>
-      </div>
-      <div class="flex flex-col items-start sm:items-end text-sm text-[#5d6873] gap-2">
-        <a href="mailto:mjvital@umass.edu" class="inline-flex items-center gap-2 hover:text-[#164e63]"><i class="fa-solid fa-envelope"></i>mjvital@umass.edu</a>
-        <a href="tel:+14133357760" class="inline-flex items-center gap-2 hover:text-[#164e63]"><i class="fa-solid fa-phone"></i>(413)-335-7760</a>
-      </div>
-    </div>
-  </footer>
-
+  <footer class="border-t border-[#dfe2df] mt-8"><div class="max-w-6xl mx-auto px-5 lg:px-8 py-8 flex flex-col sm:flex-row justify-between gap-5"><div><p class="font-bold">Marco Vital</p><p class="text-sm text-[#5d6873]">Mechanical engineering student</p></div><div class="flex flex-col items-start sm:items-end text-sm text-[#5d6873] gap-2"><a href="mailto:mjvital@umass.edu" class="inline-flex items-center gap-2 hover:text-[#164e63]"><i class="fa-solid fa-envelope"></i>mjvital@umass.edu</a><a href="tel:+14133357760" class="inline-flex items-center gap-2 hover:text-[#164e63]"><i class="fa-solid fa-phone"></i>(413)-335-7760</a></div></div></footer>
   <script>
     const pages=['home','timeline','experience','robotics','fsae','projects','skills'];
-    function switchPage(page, updateHash=true){
-      if(!pages.includes(page)) page='home';
-      pages.forEach(item=>{
-        document.getElementById('page-'+item).classList.toggle('active-page', item===page);
-        const nav=document.getElementById('nav-'+item);
-        if(nav) nav.classList.toggle('active', item===page);
-      });
-      if(updateHash) location.hash=page;
-    }
-    document.getElementById('menu-button').addEventListener('click',()=>{
-      document.body.classList.toggle('menu-open');
-      const expanded = document.body.classList.contains('menu-open');
-      document.getElementById('menu-button').setAttribute('aria-expanded', expanded ? 'true' : 'false');
-    });
+    function switchPage(page, updateHash=true){ if(!pages.includes(page)) page='home'; pages.forEach(item=>{ document.getElementById('page-'+item).classList.toggle('active-page',item===page); const nav=document.getElementById('nav-'+item); if(nav) nav.classList.toggle('active',item===page); }); if(updateHash) location.hash=page; }
+    document.getElementById('menu-button').addEventListener('click',()=>{ document.body.classList.toggle('menu-open'); const expanded=document.body.classList.contains('menu-open'); document.getElementById('menu-button').setAttribute('aria-expanded',expanded?'true':'false'); });
     document.querySelectorAll('.mobile-menu button').forEach(button=>button.addEventListener('click',()=>document.body.classList.remove('menu-open')));
-    const initial=location.hash.slice(1);
-    switchPage(pages.includes(initial)?initial:'home', false);
+    const initial=location.hash.slice(1); switchPage(pages.includes(initial)?initial:'home',false);
   </script>
 </body>
 </html>
