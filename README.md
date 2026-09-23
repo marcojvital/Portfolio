@@ -126,7 +126,7 @@
     .timeline-grid::before {
       content: "";
       position: absolute;
-      left: 9.5rem;
+      left: 8.25rem;
       top: 1.5rem;
       bottom: 1.5rem;
       width: 2px;
@@ -136,15 +136,15 @@
     .timeline-year-group {
       position: relative;
       display: grid;
-      grid-template-columns: 9.5rem minmax(0, 1fr);
-      column-gap: 2.25rem;
+      grid-template-columns: 8.25rem minmax(0, 1fr);
+      column-gap: 1.75rem;
       padding: 1.5rem 0 0.75rem;
     }
 
     .timeline-year-label {
       position: relative;
       z-index: 1;
-      padding-right: 1rem;
+      padding-right: 0.35rem;
       text-align: right;
       font: 700 2.25rem/1 'Space Grotesk', sans-serif;
       color: var(--ink);
@@ -154,7 +154,7 @@
       content: "";
       position: absolute;
       top: 0.35rem;
-      right: -0.58rem;
+      right: -0.48rem;
       width: 1rem;
       height: 1rem;
       border: 3px solid var(--paper);
