@@ -26,7 +26,6 @@
     .eyebrow { color:var(--orange); letter-spacing:.06em; font-size:.75rem; font-weight:700; }
     .menu-open .mobile-menu { display:flex; }
     #menu-button { display:none; }
-
     .timeline-grid { position:relative; }
     .timeline-grid::before { content:""; position:absolute; left:9.5rem; top:1.5rem; bottom:1.5rem; width:2px; background:var(--line); }
     .timeline-year-group { position:relative; display:grid; grid-template-columns:9.5rem minmax(0,1fr); column-gap:2.25rem; padding:1.5rem 0 .75rem; }
@@ -65,7 +64,6 @@
 
   <main class="max-w-6xl mx-auto px-5 lg:px-8 py-12 md:py-20">
     <section id="page-home" class="page-section active-page"><div class="grid md:grid-cols-[1.1fr_.9fr] gap-12 items-center"><div><p class="eyebrow mb-5">Mechanical Engineering @ UMass Amherst</p><h1 class="text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-4">Marco Vital</h1><p class="text-lg text-[#5d6873] mb-6">Currently working with UMass Robotics and Formula SAE.</p><div class="flex flex-wrap gap-4"><button onclick="switchPage('projects')" class="bg-[#164e63] text-white px-5 py-3 rounded font-semibold">View projects</button><button onclick="switchPage('timeline')" class="border border-[#dfe2df] bg-white px-5 py-3 rounded font-semibold">See timeline</button></div></div><div class="photo-placeholder">Picture Placeholder</div></div></section>
-
     <section id="page-timeline" class="page-section">
       <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Engineering journey</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Progress, one build at a time.</h1><p class="text-lg text-[#5d6873]">A season-by-season view of the work, teams, and experiences shaping my engineering path.</p></div>
       <div class="timeline-grid" aria-label="Engineering timeline from Fall 2026 to Fall 2022">
@@ -76,7 +74,6 @@
         <div class="timeline-year-group"><div class="timeline-year-label">2022</div><div class="timeline-seasons"><div class="timeline-season-row"><div class="timeline-season-label">Fall</div><div class="timeline-events"><article class="card timeline-card timeline-theme-school"><p class="eyebrow mb-2">Beginning</p><h2 class="text-xl font-bold">Started the journey</h2><p class="text-sm text-[#5d6873] mt-2">The starting point of my engineering timeline</p></article></div></div></div></div>
       </div>
     </section>
-
     <section id="page-experience" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Work experience</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Work Experience</h1></div><div class="card p-6 md:p-8"><p class="eyebrow mb-2">Boston Dynamics</p><h2 class="text-2xl font-bold mb-3">Mechanical engineering</h2><p class="text-[#5d6873]">Experience details coming soon.</p></div></section>
     <section id="page-robotics" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Student design team</p><h1 class="text-4xl md:text-5xl font-bold mb-4">UMass Robotics Research</h1><p class="text-lg text-[#5d6873]">Mechatronic problem solving, prototype iteration, and practical engineering decision-making in dynamic environments.</p></div></section>
     <section id="page-fsae" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Student design team</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Formula SAE</h1><p class="text-lg text-[#5d6873]">Designing, manufacturing, and testing as part of a student-built race car team.</p></div></section>
