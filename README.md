@@ -585,6 +585,62 @@
           Mechatronic problem solving, prototype iteration, and practical engineering decision-making in dynamic environments.
         </p>
       </div>
+
+      <div class="max-w-6xl mx-auto">
+        <div class="mb-6">
+          <h2 class="text-3xl md:text-4xl font-bold">Robotics Club Quadruped</h2>
+          <p class="mt-2 text-sm text-[#5d6873]">September 2024 – May 2025</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+          <img
+            src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=900&q=80"
+            alt="Quadruped robot design concept"
+            class="w-full h-72 object-cover rounded-lg border border-[#dfe2df]"
+          >
+          <img
+            src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=900&q=80"
+            alt="Quadruped robot assembly"
+            class="w-full h-72 object-cover rounded-lg border border-[#dfe2df]"
+          >
+        </div>
+
+        <div class="mb-8">
+          <p class="text-lg text-[#5d6873] leading-relaxed">
+            The quadruped project focused on developing a stable and mobile robot platform for club-driven mechatronic experimentation.
+            I worked on leg geometry, structural refinement, and the iterative testing process needed to improve balance, weight distribution,
+            and overall performance in real-world conditions.
+          </p>
+        </div>
+
+        <div class="overflow-x-auto">
+          <div class="flex items-center gap-4 min-w-[760px] py-2">
+            <img
+              src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80"
+              alt="Robot frame prototype"
+              class="w-full h-52 object-cover rounded-lg border border-[#dfe2df]"
+            >
+            <div class="text-2xl text-[#164e63] flex-shrink-0"><i class="fa-solid fa-arrow-right"></i></div>
+            <img
+              src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80"
+              alt="Robot electronics bench"
+              class="w-full h-52 object-cover rounded-lg border border-[#dfe2df]"
+            >
+            <div class="text-2xl text-[#164e63] flex-shrink-0"><i class="fa-solid fa-arrow-right"></i></div>
+            <img
+              src="https://images.unsplash.com/photo-1565793298595-6a879b1d9490?auto=format&fit=crop&w=900&q=80"
+              alt="Quadruped testing setup"
+              class="w-full h-52 object-cover rounded-lg border border-[#dfe2df]"
+            >
+            <div class="text-2xl text-[#164e63] flex-shrink-0"><i class="fa-solid fa-arrow-right"></i></div>
+            <img
+              src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80"
+              alt="Final robot assembly"
+              class="w-full h-52 object-cover rounded-lg border border-[#dfe2df]"
+            >
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="page-fsae" class="page-section">
