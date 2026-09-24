@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Robot assembly image placeholder</title>
+  <desc id="desc">Replace this file with a robot assembly photograph.</desc>
+  <rect width="1200" height="800" fill="#f7f6f2"/>
+  <path d="M250 560 430 250h340l180 310" fill="none" stroke="#7d1f36" stroke-width="34"/>
+  <circle cx="430" cy="560" r="62" fill="#d3b08c"/><circle cx="770" cy="560" r="62" fill="#d3b08c"/>
+  <text x="600" y="720" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" fill="#5d6873">Robot assembly photo</text>
+</svg>
