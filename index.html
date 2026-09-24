@@ -17,6 +17,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
   >
   <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
   <style>
     :root {
@@ -41,7 +42,7 @@
     .nav-link:hover, .nav-link.active { color: var(--blue); border-color: var(--orange); }
     .card { background: #fff; border: 1px solid var(--line); border-radius: 4px; }
     .card:hover { border-color: #aebbb9; }
-    .photo-placeholder { min-height: 420px; border: 1px solid var(--line); border-radius: 8px; background: linear-gradient(135deg, #eef1ee, #f7f6f2); display: flex; align-items: center; justify-content: center; color: #74817f; }
+    .photo-placeholder { min-height: 420px; border: 1px solid var(--line); border-radius: 8px; background: linear-gradient(135deg, #eef1ee, #f7f6f2); display: flex; align-items: center; justify-content: center; }
     .eyebrow { color: var(--orange); letter-spacing: 0.06em; font-size: 0.75rem; font-weight: 700; }
     .menu-open .mobile-menu { display: flex; }
     #menu-button { display: none; }
@@ -49,7 +50,7 @@
     .timeline-grid::before { content: ""; position: absolute; left: 6rem; top: 1.5rem; bottom: 1.5rem; width: 2px; background: var(--line); }
     .timeline-year-group { position: relative; display: grid; grid-template-columns: 6rem minmax(0, 1fr); column-gap: 1rem; padding: 1.5rem 0 0.75rem; }
     .timeline-year-label { position: relative; z-index: 1; padding-right: 0.35rem; text-align: left; font: 700 2rem/1 'Space Grotesk', sans-serif; color: var(--ink); }
-    .timeline-year-label::after { content: ""; position: absolute; top: 0.35rem; right: -0.5rem; width: 1rem; height: 1rem; border: 3px solid var(--paper); border-radius: 50%; background: var(--orange); box-shadow: 0 0 0 1px var(--orange); }
+    .timeline-year-label::after { content: ""; position: absolute; top: 0.35rem; right: -0.5rem; width: 1rem; height: 1rem; border: 3px solid var(--paper); border-radius: 50%; background: var(--orange); }
     .timeline-seasons { display: grid; gap: 0.75rem; padding-bottom: 0.75rem; }
     .timeline-season-row { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); gap: 1.25rem; align-items: start; min-height: 6.5rem; }
     .timeline-season-label { padding-top: 1.25rem; color: var(--muted); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
@@ -85,6 +86,7 @@
         <button onclick="switchPage('fsae')" id="nav-fsae" class="nav-link py-2">FSAE</button>
         <button onclick="switchPage('skills')" id="nav-skills" class="nav-link py-2">Skills</button>
         <button onclick="switchPage('timeline')" id="nav-timeline" class="nav-link py-2">Timeline</button>
+        <button onclick="switchPage('test')" id="nav-test" class="nav-link py-2">Test</button>
       </div>
       <button id="menu-button" class="md:hidden text-xl p-2" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu"><i class="fa-solid fa-bars"></i></button>
     </nav>
@@ -95,53 +97,86 @@
       <button onclick="switchPage('fsae')" class="text-left py-2">FSAE</button>
       <button onclick="switchPage('skills')" class="text-left py-2">Skills</button>
       <button onclick="switchPage('timeline')" class="text-left py-2">Timeline</button>
+      <button onclick="switchPage('test')" class="text-left py-2">Test</button>
     </div>
   </header>
 
   <main class="max-w-6xl mx-auto px-5 lg:px-8 py-12 md:py-20">
     <section id="page-home" class="page-section active-page">
-      <div class="grid md:grid-cols-[1.1fr_.9fr] gap-12 items-center"><div><p class="eyebrow mb-5">Mechanical Engineering @ UMass Amherst</p><h1 class="text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-4">Marco Vital</h1><p class="text-lg text-[#5d6873] mb-6">Currently working with UMass Robotics and Formula SAE.</p><div class="flex flex-wrap gap-4"><button onclick="switchPage('experience')" class="bg-[#164e63] text-white px-5 py-3 rounded font-semibold">View current co-op</button><button onclick="switchPage('timeline')" class="border border-[#dfe2df] bg-white px-5 py-3 rounded font-semibold">See timeline</button></div></div><div class="photo-placeholder">Picture Placeholder</div></div>
+      <div class="grid md:grid-cols-[1.1fr_.9fr] gap-12 items-center"><div><p class="eyebrow mb-5">Mechanical Engineering @ UMass Amherst</p><h1 class="text-4xl md:text-6xl font-bold leading-tight">Designing systems that move, build, and solve.</h1><p class="mt-6 text-lg text-[#5d6873] max-w-xl">I’m Marco Vital, a mechanical engineering student focused on robotics, product design, and hands-on problem solving through real-world engineering work.</p><div class="mt-8 flex flex-wrap gap-4"><button onclick="switchPage('experience')" class="bg-[#164e63] text-white px-5 py-3 font-semibold rounded">View experience</button><button onclick="switchPage('timeline')" class="border border-[#dfe2df] bg-white px-5 py-3 font-semibold rounded">See timeline</button></div></div><div class="card p-6 md:p-8"><div class="photo-placeholder text-[#5d6873] font-semibold text-lg">Photo / project placeholder</div><div class="mt-6 flex gap-4 text-sm text-[#5d6873]"><span><strong>Focus:</strong> Robotics</span><span><strong>Interests:</strong> CAD, FEA, prototyping</span></div></div></div>
     </section>
 
     <section id="page-timeline" class="page-section">
-      <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Engineering journey</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Progress, one build at a time.</h1><p class="text-lg text-[#5d6873]">A season-by-season view of the work, teams, and experiences shaping my engineering path.</p></div>
+      <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Engineering journey</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Progress, one build at a time.</h1><p class="text-lg text-[#5d6873]">A snapshot of the projects, coursework, and design work that have shaped my path in mechanical engineering.</p></div>
       <div class="timeline-grid" aria-label="Engineering timeline from Fall 2026 to Fall 2022">
-        <div class="timeline-year-group"><div class="timeline-year-label">2026</div><div class="timeline-seasons"><div class="timeline-season-row"><div class="timeline-season-label">Fall</div><div class="timeline-events"><article class="card timeline-card timeline-theme-bd"><p class="eyebrow mb-2">Work experience</p><h2 class="text-xl font-bold">Advanced Mechanical Engineering</h2><p class="text-sm text-[#5d6873] mt-2">Boston Dynamics</p></article></div></div><div class="timeline-season-row"><div class="timeline-season-label">Summer</div><div class="timeline-events"><article class="card timeline-card timeline-theme-bd"><p class="eyebrow mb-2">Work experience</p><h2 class="text-xl font-bold">Boston Dynamics</h2><p class="text-sm text-[#5d6873] mt-2">Mechanical engineering internship</p></article><article class="card timeline-card timeline-theme-fsae"><p class="eyebrow mb-2">Student design team</p><h2 class="text-xl font-bold">Formula SAE</h2><p class="text-sm text-[#5d6873] mt-2">Design and build season</p></article></div></div><div class="timeline-season-row"><div class="timeline-season-label">Spring</div><div class="timeline-events"><article class="card timeline-card timeline-theme-robotics"><p class="eyebrow mb-2">Student design team</p><h2 class="text-xl font-bold">UMass Robotics Research</h2><p class="text-sm text-[#5d6873] mt-2">Prototype iteration and mechatronic problem solving</p></article><article class="card timeline-card timeline-theme-school"><p class="eyebrow mb-2">Education</p><h2 class="text-xl font-bold">UMass Amherst</h2><p class="text-sm text-[#5d6873] mt-2">Mechanical engineering coursework</p></article></div></div></div></div>
-        <div class="timeline-year-group"><div class="timeline-year-label">2025</div><div class="timeline-seasons"><div class="timeline-season-row"><div class="timeline-season-label">Fall</div><div class="timeline-events"><article class="card timeline-card timeline-theme-robotics"><p class="eyebrow mb-2">Student design team</p><h2 class="text-xl font-bold">UMass Robotics Research</h2><p class="text-sm text-[#5d6873] mt-2">Research, testing, and hands-on fabrication</p></article><article class="card timeline-card timeline-theme-school"><p class="eyebrow mb-2">Education</p><h2 class="text-xl font-bold">UMass Amherst</h2><p class="text-sm text-[#5d6873] mt-2">Mechanical engineering</p></article></div></div><div class="timeline-season-row"><div class="timeline-season-label">Summer</div><div class="timeline-events"><article class="card timeline-card"><p class="eyebrow mb-2">Research</p><h2 class="text-xl font-bold">Summer research</h2><p class="text-sm text-[#5d6873] mt-2">Developing and testing physical systems</p></article></div></div><div class="timeline-season-row"><div class="timeline-season-label">Spring</div><div class="timeline-events"><article class="card timeline-card timeline-theme-fsae"><p class="eyebrow mb-2">Student design team</p><h2 class="text-xl font-bold">Formula SAE</h2><p class="text-sm text-[#5d6873] mt-2">Manufacturing constraints and design tradeoffs</p></article><article class="card timeline-card timeline-theme-school"><p class="eyebrow mb-2">Education</p><h2 class="text-xl font-bold">UMass Amherst</h2><p class="text-sm text-[#5d6873] mt-2">Mechanical engineering coursework</p></article></div></div></div></div>
-        <div class="timeline-year-group"><div class="timeline-year-label">2024</div><div class="timeline-seasons"><div class="timeline-season-row"><div class="timeline-season-label">Fall</div><div class="timeline-events"><article class="card timeline-card timeline-theme-fsae"><p class="eyebrow mb-2">Student design team</p><h2 class="text-xl font-bold">Formula SAE</h2><p class="text-sm text-[#5d6873] mt-2">Joined the team and began vehicle development</p></article><article class="card timeline-card timeline-theme-school"><p class="eyebrow mb-2">Education</p><h2 class="text-xl font-bold">UMass Amherst</h2><p class="text-sm text-[#5d6873] mt-2">Started mechanical engineering</p></article></div></div><div class="timeline-season-row"><div class="timeline-season-label">Summer</div><div class="timeline-events"><article class="card timeline-card"><p class="eyebrow mb-2">Making</p><h2 class="text-xl font-bold">Design and prototyping</h2><p class="text-sm text-[#5d6873] mt-2">Building a practical foundation in hands-on engineering</p></article></div></div><div class="timeline-season-row"><div class="timeline-season-label">Spring</div><div class="timeline-events"><article class="card timeline-card timeline-theme-school"><p class="eyebrow mb-2">Education</p><h2 class="text-xl font-bold">Engineering foundation</h2><p class="text-sm text-[#5d6873] mt-2">Coursework, experimentation, and design practice</p></article></div></div></div></div>
-        <div class="timeline-year-group"><div class="timeline-year-label">2023</div><div class="timeline-seasons"><div class="timeline-season-row"><div class="timeline-season-label">Fall</div><div class="timeline-events"><article class="card timeline-card timeline-theme-school"><p class="eyebrow mb-2">Education</p><h2 class="text-xl font-bold">Started at UMass Amherst</h2><p class="text-sm text-[#5d6873] mt-2">Began the mechanical engineering journey</p></article></div></div><div class="timeline-season-row"><div class="timeline-season-label">Summer</div><div class="timeline-events"><article class="card timeline-card"><p class="eyebrow mb-2">Preparation</p><h2 class="text-xl font-bold">Preparing for college</h2><p class="text-sm text-[#5d6873] mt-2">Exploring engineering and preparing to begin at UMass Amherst</p></article></div></div><div class="timeline-season-row"><div class="timeline-season-label">Spring</div><div class="timeline-events"><article class="card timeline-card"><p class="eyebrow mb-2">Exploration</p><h2 class="text-xl font-bold">Engineering interests</h2><p class="text-sm text-[#5d6873] mt-2">Developing an interest in mechanical design and making</p></article></div></div></div></div>
-        <div class="timeline-year-group"><div class="timeline-year-label">2022</div><div class="timeline-seasons"><div class="timeline-season-row"><div class="timeline-season-label">Fall</div><div class="timeline-events"><article class="card timeline-card timeline-theme-school"><p class="eyebrow mb-2">Beginning</p><h2 class="text-xl font-bold">Started the journey</h2><p class="text-sm text-[#5d6873] mt-2">The starting point of my engineering timeline</p></article></div></div></div></div>
+        <div class="timeline-year-group"><div class="timeline-year-label">2026</div><div class="timeline-seasons"><div class="timeline-season-row"><div class="timeline-season-label">Fall</div><div class="timeline-events"><article class="timeline-card timeline-theme-robotics card"><p class="eyebrow mb-2">Robotics</p><h3 class="font-bold text-lg mb-1">Advanced systems design</h3><p class="text-sm text-[#5d6873]">Exploring autonomous mechanisms and control-focused product engineering.</p></article></div></div></div></div>
+        <div class="timeline-year-group"><div class="timeline-year-label">2025</div><div class="timeline-seasons"><div class="timeline-season-row"><div class="timeline-season-label">Fall</div><div class="timeline-events"><article class="timeline-card timeline-theme-school card"><p class="eyebrow mb-2">School</p><h3 class="font-bold text-lg mb-1">Capstone and research</h3><p class="text-sm text-[#5d6873]">Pushing deeper into applied design work with an emphasis on system-level thinking.</p></article></div></div></div></div>
+        <div class="timeline-year-group"><div class="timeline-year-label">2024</div><div class="timeline-seasons"><div class="timeline-season-row"><div class="timeline-season-label">Fall</div><div class="timeline-events"><article class="timeline-card timeline-theme-bd card"><p class="eyebrow mb-2">Design</p><h3 class="font-bold text-lg mb-1">Design-build iteration</h3><p class="text-sm text-[#5d6873]">Refining prototypes and translating concepts into validated engineering solutions.</p></article></div></div></div></div>
+        <div class="timeline-year-group"><div class="timeline-year-label">2023</div><div class="timeline-seasons"><div class="timeline-season-row"><div class="timeline-season-label">Fall</div><div class="timeline-events"><article class="timeline-card timeline-theme-fsae card"><p class="eyebrow mb-2">FSAE</p><h3 class="font-bold text-lg mb-1">Vehicle systems work</h3><p class="text-sm text-[#5d6873]">Continuing hands-on work in automotive design, fabrication, and test execution.</p></article></div></div></div></div>
+        <div class="timeline-year-group"><div class="timeline-year-label">2022</div><div class="timeline-seasons"><div class="timeline-season-row"><div class="timeline-season-label">Fall</div><div class="timeline-events"><article class="timeline-card timeline-theme-school card"><p class="eyebrow mb-2">Academics</p><h3 class="font-bold text-lg mb-1">Foundations</h3><p class="text-sm text-[#5d6873]">Building the technical base in statics, materials, and engineering design.</p></article></div></div></div></div>
       </div>
     </section>
 
-    <section id="page-experience" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Work experience</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Work Experience</h1></div><div class="card p-6 md:p-8"><p class="eyebrow mb-2">Boston Dynamics</p><h2 class="text-2xl font-bold mb-3">Mechanical engineering</h2><p class="text-[#5d6873]">Experience details coming soon.</p></div></section>
+    <section id="page-experience" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Work experience</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Work Experience</h1><p class="text-lg text-[#5d6873]">Opportunities that have helped me combine engineering fundamentals with hands-on product and systems work.</p></div><div class="grid gap-6"><article class="card p-6"><div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"><div><p class="eyebrow">Mechanical Engineering</p><h2 class="text-2xl font-bold mt-2">Engineering Intern / Product Development</h2></div><span class="text-sm font-semibold text-[#5d6873]">2024–Present</span></div><p class="mt-4 text-[#5d6873]">Supported design iteration, prototyping, and analysis work with a focus on practical engineering solutions and manufacturability.</p></article></div></section>
 
-    <section id="page-robotics" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Student design team</p><h1 class="text-4xl md:text-5xl font-bold mb-4">UMass Robotics Research</h1><p class="text-lg text-[#5d6873]">Mechatronic problem solving, prototype iteration, and practical engineering decision-making in dynamic environments.</p></div><div class="max-w-6xl mx-auto"><div class="mb-6"><h2 class="text-3xl md:text-4xl font-bold">Robotics Club Quadruped</h2><p class="mt-2 text-sm text-[#5d6873]">September 2024 – May 2025</p></div><div class="grid md:grid-cols-2 gap-6 mb-8"><img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=900&q=80" alt="Quadruped robot design concept" class="w-full h-72 object-cover rounded-lg border border-[#dfe2df]"><img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=900&q=80" alt="Quadruped robot assembly" class="w-full h-72 object-cover rounded-lg border border-[#dfe2df]"></div><div class="mb-8"><p class="text-lg text-[#5d6873] leading-relaxed">The quadruped project focused on developing a stable and mobile robot platform for club-driven mechatronic experimentation. I worked on leg geometry, structural refinement, and the iterative testing process needed to improve balance, weight distribution, and overall performance in real-world conditions.</p></div><div class="overflow-x-auto"><div class="flex items-center gap-4 min-w-[760px] py-2"><img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80" alt="Robot frame prototype" class="w-full h-52 object-cover rounded-lg border border-[#dfe2df]"><div class="text-2xl text-[#164e63] flex-shrink-0"><i class="fa-solid fa-arrow-right"></i></div><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Robot electronics bench" class="w-full h-52 object-cover rounded-lg border border-[#dfe2df]"><div class="text-2xl text-[#164e63] flex-shrink-0"><i class="fa-solid fa-arrow-right"></i></div><img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9490?auto=format&fit=crop&w=900&q=80" alt="Quadruped testing setup" class="w-full h-52 object-cover rounded-lg border border-[#dfe2df]"><div class="text-2xl text-[#164e63] flex-shrink-0"><i class="fa-solid fa-arrow-right"></i></div><img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80" alt="Final robot assembly" class="w-full h-52 object-cover rounded-lg border border-[#dfe2df]"></div></div></div></section>
+    <section id="page-robotics" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Student design team</p><h1 class="text-4xl md:text-5xl font-bold mb-4">UMass Robotics</h1><p class="text-lg text-[#5d6873]">Working on robotic systems, mechanized motion, and prototype development in a collaborative engineering environment.</p></div><div class="card p-6"><p class="text-[#5d6873]">Design, prototyping, and testing work centered on building reliable robotic systems and learning through iterative development.</p></div></section>
 
-    <section id="page-fsae" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Student design team</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Formula SAE</h1><p class="text-lg text-[#5d6873]">Designing, manufacturing, and testing as part of a student-built race car team.</p></div></section>
-    <section id="page-projects" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Personal work</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Projects</h1><p class="text-lg text-[#5d6873]">Work across design, making, and engineering.</p></div></section>
-    <section id="page-skills" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Capabilities</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Skills</h1><p class="text-lg text-[#5d6873]">Mechanical design, prototyping, and hands-on problem solving.</p></div></section>
+    <section id="page-fsae" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Student design team</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Formula SAE</h1><p class="text-lg text-[#5d6873]">Applying mechanical design, manufacturing, and data-driven testing to a competitive vehicle project.</p></div><div class="card p-6"><p class="text-[#5d6873]">Contributing to vehicle systems, fabrication decisions, and performance-focused engineering improvements.</p></div></section>
+
+    <section id="page-projects" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Personal work</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Projects</h1><p class="text-lg text-[#5d6873]">A selection of hands-on builds and problem-solving work across mechanical and product design.</p></div><div class="card p-6"><p class="text-[#5d6873]">Project spotlights and design studies will appear here, with examples of prototypes, modeling work, and system-level problem solving.</p></div></section>
+
+    <section id="page-skills" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Capabilities</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Skills</h1><p class="text-lg text-[#5d6873]">Core tools and engineering skills developed through coursework, design teams, and practical hands-on work.</p></div><div class="grid md:grid-cols-2 gap-6"><div class="card p-6"><h3 class="text-xl font-bold mb-3">Design & analysis</h3><ul class="text-[#5d6873] space-y-2"><li>CAD modeling</li><li>FEA / simulation</li><li>Design for manufacturing</li></ul></div><div class="card p-6"><h3 class="text-xl font-bold mb-3">Build & test</h3><ul class="text-[#5d6873] space-y-2"><li>Prototyping</li><li>Testing and validation</li><li>Iteration and troubleshooting</li></ul></div></div></section>
+
+    <section id="page-test" class="page-section">
+      <div class="max-w-3xl mb-8">
+        <p class="eyebrow mb-3">Temporary test page</p>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Interactive 3D Model</h1>
+        <p class="text-lg text-[#5d6873]">Drag to rotate, scroll or pinch to zoom, and use the controls on the viewer.</p>
+      </div>
+
+      <div class="bg-white border border-[#dfe2df] rounded p-3 md:p-5">
+        <model-viewer
+          src="assets/models/test-model.glb"
+          alt="Interactive 3D model test"
+          camera-controls
+          auto-rotate
+          shadow-intensity="1"
+          exposure="1"
+          environment-image="neutral"
+          style="width: 100%; height: min(65vw, 600px); min-height: 360px; background: #eef1ee; border-radius: 6px;"
+        >
+          <div slot="poster" class="h-full flex items-center justify-center text-[#5d6873] text-center p-6">
+            Add your model at assets/models/test-model.glb to load the 3D viewer.
+          </div>
+        </model-viewer>
+      </div>
+
+      <p class="mt-6 text-sm text-[#5d6873]"><strong>Model path:</strong> <code>assets/models/test-model.glb</code></p>
+      <p class="mt-2 text-sm text-[#5d6873]"><button onclick="switchPage('home')" class="text-[#164e63] underline">Return to portfolio</button></p>
+    </section>
   </main>
-  <footer class="border-t border-[#dfe2df] mt-8"><div class="max-w-6xl mx-auto px-5 lg:px-8 py-8"><p class="font-bold">Marco Vital</p><p class="text-sm text-[#5d6873] mt-1">Mechanical Engineering @ UMass Amherst</p></div></footer>
+  <footer class="border-t border-[#dfe2df] mt-8"><div class="max-w-6xl mx-auto px-5 lg:px-8 py-8"><p class="font-bold">Marco Vital</p><p class="text-sm text-[#5d6873] mt-1">Mechanical Engineering portfolio</p></div></footer>
   <script>
-    const pages = ['home', 'timeline', 'experience', 'robotics', 'fsae', 'projects', 'skills'];
+    const pages = ['home', 'timeline', 'experience', 'robotics', 'fsae', 'projects', 'skills', 'test'];
     function switchPage(page, updateHash = true) {
       if (!pages.includes(page)) page = 'home';
       pages.forEach((item) => {
         const pageElement = document.getElementById(`page-${item}`);
         const navElement = document.getElementById(`nav-${item}`);
-        pageElement.classList.toggle('active-page', item === page);
+        if (pageElement) pageElement.classList.toggle('active-page', item === page);
         if (navElement) navElement.classList.toggle('active', item === page);
       });
       if (updateHash) history.replaceState(null, '', `#${page}`);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     const menuButton = document.getElementById('menu-button');
-    menuButton.addEventListener('click', () => {
-      document.body.classList.toggle('menu-open');
-      const expanded = document.body.classList.contains('menu-open');
-      menuButton.setAttribute('aria-expanded', expanded);
-    });
+    if (menuButton) {
+      menuButton.addEventListener('click', () => {
+        document.body.classList.toggle('menu-open');
+        const expanded = document.body.classList.contains('menu-open');
+        menuButton.setAttribute('aria-expanded', expanded);
+      });
+    }
     document.querySelectorAll('.mobile-menu button').forEach((button) => {
       button.addEventListener('click', () => document.body.classList.remove('menu-open'));
     });
