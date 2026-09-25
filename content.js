@@ -1,4 +1,6 @@
 const siteContent = {
+  // ===== EDITABLE SITE CONTENT =====
+  // Update everything in this object and you can usually avoid touching the HTML.
   meta: {
     title: 'Marco Vital | Mechanical Engineering',
     description: 'Marco Vital — mechanical engineering portfolio'
@@ -7,6 +9,16 @@ const siteContent = {
     name: 'Marco Vital',
     subtitle: 'Mechanical Engineering',
     school: 'Mechanical Engineering @ UMass Amherst'
+  },
+  contact: {
+    email: '___ placeholder',
+    phone: '___ placeholder',
+    emailHref: 'mailto:___',
+    phoneHref: 'tel:___'
+  },
+  assets: {
+    profileImage: 'assets/images/profile-placeholder.svg',
+    model: 'assets/models/test-model.glb'
   },
   navigation: {
     home: 'Home',
@@ -28,10 +40,8 @@ const siteContent = {
     eyebrow: 'Engineering journey',
     heading: 'Progress, one build at a time.',
     intro: 'A season-by-season view of the work, teams, and experiences shaping my engineering path.',
-
     // Add events as one line each: [start year, start season, end year, end season, title, text, theme].
     // Seasons are 1 = Fall, 2 = Winter, 3 = Spring, 4 = Summer.
-    // The end year/season is optional; use the same values for a single-season event.
     // Available themes: robotics, school, bd, and fsae.
     events: [
       [2026, 1, 2026, 1, 'Boston Dynamics', 'Mechanical engineering co-op', 'bd'],
@@ -52,7 +62,7 @@ const siteContent = {
     intro: 'Mechatronic problem solving, prototype iteration, and practical engineering decision-making in dynamic environments.',
     projectTitle: 'Robotics Club Quadruped',
     dates: 'September 2024 – May 2025',
-    description: 'The quadruped project focused on developing a stable and mobile robot platform for club-driven mechatronic experimentation. I worked on leg geometry, structural refinement, and the iterative testing process needed to improve balance, weight distribution, and overall performance in real-world conditions.'
+    description: 'The quadruped project focused on developing a stable and mobile robot platform for club-driven mechatronic experimentation. I worked on leg geometry, structural refinement, and real-world prototyping iterations.'
   },
   fsae: {
     eyebrow: 'Student design team',
@@ -71,13 +81,17 @@ const siteContent = {
   }
 };
 
-// Keep the content data available to the page and make the timeline a data-driven component.
 window.siteContent = siteContent;
 
 (function applySiteContent() {
   const setText = (selector, value) => {
     const element = document.querySelector(selector);
     if (element) element.textContent = value;
+  };
+
+  const setAttribute = (selector, attribute, value) => {
+    const element = document.querySelector(selector);
+    if (element) element.setAttribute(attribute, value);
   };
 
   const getButtonByOnclick = (onclickValue) => Array.from(document.querySelectorAll('button')).find(
@@ -144,17 +158,36 @@ window.siteContent = siteContent;
   const metaDescription = document.querySelector('meta[name="description"]');
   if (metaDescription) metaDescription.setAttribute('content', siteContent.meta.description);
 
+  // Brand text
   setText('header nav button[aria-label="Go to home"] span:nth-of-type(1)', siteContent.brand.name);
   setText('header nav button[aria-label="Go to home"] span:nth-of-type(2)', siteContent.brand.subtitle);
   setText('footer .font-bold', siteContent.brand.name);
   setText('footer p.text-sm', siteContent.brand.school);
 
+  // Navigation
   Object.entries(siteContent.navigation).forEach(([key, value]) => setText(`#nav-${key}`, value));
   document.querySelectorAll('#mobile-menu button').forEach((button, index) => {
     const key = Object.keys(siteContent.navigation)[index];
     if (key) button.textContent = siteContent.navigation[key];
   });
 
+  // Contact block
+  const emailLink = document.querySelector('.contact-email');
+  if (emailLink) {
+    emailLink.textContent = siteContent.contact.email;
+    emailLink.href = siteContent.contact.emailHref;
+  }
+  const phoneLink = document.querySelector('.contact-phone');
+  if (phoneLink) {
+    phoneLink.textContent = siteContent.contact.phone;
+    phoneLink.href = siteContent.contact.phoneHref;
+  }
+  const emailButton = document.querySelector('.contact-action-email');
+  if (emailButton) emailButton.href = siteContent.contact.emailHref;
+  const phoneButton = document.querySelector('.contact-action-phone');
+  if (phoneButton) phoneButton.href = siteContent.contact.phoneHref;
+
+  // Home section images and copy
   setText('#page-home .eyebrow', siteContent.home.eyebrow);
   setText('#page-home h1', siteContent.home.heading);
   setText('#page-home p.text-lg', siteContent.home.intro);
@@ -163,29 +196,38 @@ window.siteContent = siteContent;
   const homeTimelineButton = getButtonByOnclick("switchPage('timeline')");
   if (homeTimelineButton) homeTimelineButton.textContent = siteContent.home.timelineButton;
   setText('#page-home .photo-placeholder', siteContent.home.picturePlaceholder);
+  setAttribute('#page-home .profile-image', 'src', siteContent.assets.profileImage);
+  setAttribute('#page-home .profile-image', 'alt', `${siteContent.brand.name} profile placeholder`);
 
+  // Timeline section
   setText('#page-timeline .eyebrow', siteContent.timeline.eyebrow);
   setText('#page-timeline h1', siteContent.timeline.heading);
   setText('#page-timeline > div:first-child p.text-lg', siteContent.timeline.intro);
   renderTimeline();
 
+  // Experience and other sections
   setText('#page-experience .eyebrow', siteContent.experience.eyebrow);
   setText('#page-experience h1', siteContent.experience.heading);
   setText('#page-experience .card .eyebrow', siteContent.experience.company);
   setText('#page-experience .card h2', siteContent.experience.role);
   setText('#page-experience .card p:last-of-type', siteContent.experience.details);
+
   setText('#page-robotics > div:first-child .eyebrow', siteContent.robotics.eyebrow);
   setText('#page-robotics > div:first-child h1', siteContent.robotics.heading);
   setText('#page-robotics > div:first-child p.text-lg', siteContent.robotics.intro);
   setText('#page-robotics h2', siteContent.robotics.projectTitle);
   setText('#page-robotics .mt-2.text-sm', siteContent.robotics.dates);
   setText('#page-robotics .mb-8 p', siteContent.robotics.description);
+  setAttribute('#page-robotics model-viewer', 'src', siteContent.assets.model);
+
   setText('#page-fsae .eyebrow', siteContent.fsae.eyebrow);
   setText('#page-fsae h1', siteContent.fsae.heading);
   setText('#page-fsae p.text-lg', siteContent.fsae.intro);
+
   setText('#page-projects .eyebrow', siteContent.projects.eyebrow);
   setText('#page-projects h1', siteContent.projects.heading);
   setText('#page-projects p.text-lg', siteContent.projects.intro);
+
   setText('#page-skills .eyebrow', siteContent.skills.eyebrow);
   setText('#page-skills h1', siteContent.skills.heading);
   setText('#page-skills p.text-lg', siteContent.skills.intro);
