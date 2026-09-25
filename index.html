@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Marco Vital — mechanical engineering portfolio">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Marco Vital — mechanical engineering portfolio" />
   <title>Marco Vital | Mechanical Engineering</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
-    rel="stylesheet"
-  >
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  >
+  <!-- Fonts and icon set -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
@@ -33,42 +29,208 @@
     }
 
     * { box-sizing: border-box; }
-    body { margin: 0; color: var(--ink); background: var(--paper); font-family: 'DM Sans', sans-serif; }
-    h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; }
-    .page-section { display: none; animation: appear 0.3s ease both; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: "DM Sans", sans-serif;
+    }
+    h1, h2, h3, h4 { font-family: "Space Grotesk", sans-serif; }
+    a { text-decoration: none; }
+
+    .page-section {
+      display: none;
+      animation: appear 0.25s ease both;
+    }
     .page-section.active-page { display: block; }
-    @keyframes appear { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: none; } }
-    .nav-link { color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; transition: 0.2s; }
-    .nav-link:hover, .nav-link.active { color: var(--blue); border-color: var(--orange); }
-    .card { background: #fff; border: 1px solid var(--line); border-radius: 4px; }
+    @keyframes appear {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: none; }
+    }
+
+    .nav-link {
+      color: var(--muted);
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: 0.2s ease;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: var(--blue);
+      border-color: var(--orange);
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
     .card:hover { border-color: #aebbb9; }
-    .photo-placeholder { min-height: 420px; border: 1px solid var(--line); border-radius: 8px; background: linear-gradient(135deg, #eef1ee, #f7f6f2); display: flex; align-items: center; justify-content: center; }
-    .eyebrow { color: var(--orange); letter-spacing: 0.06em; font-size: 0.75rem; font-weight: 700; }
-    .menu-open .mobile-menu { display: flex; }
-    #menu-button { display: none; }
+
+    .eyebrow {
+      color: var(--orange);
+      letter-spacing: 0.06em;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .profile-image {
+      width: 100%;
+      min-height: 420px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      object-fit: cover;
+      background: linear-gradient(135deg, #eef1ee, #f7f6f2);
+      display: block;
+    }
+
     .timeline-grid { position: relative; }
-    .timeline-grid::before { content: ""; position: absolute; left: 6rem; top: 1.5rem; bottom: 1.5rem; width: 2px; background: var(--line); }
-    .timeline-year-group { position: relative; display: grid; grid-template-columns: 6rem minmax(0, 1fr); column-gap: 1rem; padding: 1.5rem 0 0.75rem; }
-    .timeline-year-label { position: relative; z-index: 1; padding-right: 0.35rem; text-align: left; font: 700 2rem/1 'Space Grotesk', sans-serif; color: var(--ink); }
-    .timeline-year-label::after { content: ""; position: absolute; top: 0.35rem; right: -0.5rem; width: 1rem; height: 1rem; border: 3px solid var(--paper); border-radius: 50%; background: var(--orange); }
+    .timeline-grid::before {
+      content: "";
+      position: absolute;
+      left: 6rem;
+      top: 1.5rem;
+      bottom: 1.5rem;
+      width: 2px;
+      background: var(--line);
+    }
+    .timeline-year-group {
+      position: relative;
+      display: grid;
+      grid-template-columns: 6rem minmax(0, 1fr);
+      column-gap: 1rem;
+      padding: 1.5rem 0 0.75rem;
+    }
+    .timeline-year-label {
+      position: relative;
+      z-index: 1;
+      padding-right: 0.35rem;
+      text-align: left;
+      font: 700 2rem/1 "Space Grotesk", sans-serif;
+      color: var(--ink);
+    }
+    .timeline-year-label::after {
+      content: "";
+      position: absolute;
+      top: 0.35rem;
+      right: -0.5rem;
+      width: 1rem;
+      height: 1rem;
+      border: 3px solid var(--paper);
+      border-radius: 50%;
+      background: var(--orange);
+    }
     .timeline-seasons { display: grid; gap: 0.75rem; padding-bottom: 0.75rem; }
-    .timeline-season-row { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); gap: 1.25rem; align-items: start; min-height: 6.5rem; }
-    .timeline-season-label { padding-top: 1.25rem; color: var(--muted); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
-    .timeline-events { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; min-width: 0; }
-    .timeline-card { min-height: 6rem; padding: 1.25rem; border-left: 4px solid var(--topic-color, var(--orange)); }
+    .timeline-season-row {
+      display: grid;
+      grid-template-columns: 5.5rem minmax(0, 1fr);
+      gap: 1.25rem;
+      align-items: start;
+      min-height: 6.5rem;
+    }
+    .timeline-season-label {
+      padding-top: 1.25rem;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .timeline-events {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      gap: 1rem;
+      min-width: 0;
+    }
+    .timeline-card {
+      min-height: 6rem;
+      padding: 1.25rem;
+      border-left: 4px solid var(--topic-color, var(--orange));
+    }
     .timeline-card .eyebrow { color: var(--topic-color, var(--orange)); }
     .timeline-theme-robotics { --topic-color: var(--orange); }
     .timeline-theme-school { --topic-color: var(--maroon); }
     .timeline-theme-bd { --topic-color: var(--bd-blue); }
     .timeline-theme-fsae { --topic-color: var(--fsae-tan); }
+
+    .contact-panel {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .contact-actions {
+      display: flex;
+      gap: 0.75rem;
+    }
+    .contact-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 9999px;
+      background: var(--blue);
+      color: white;
+      border: 1px solid var(--blue);
+      transition: 0.2s ease;
+    }
+    .contact-action:hover {
+      background: var(--orange);
+      border-color: var(--orange);
+    }
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.2rem;
+      text-align: right;
+      font-size: 0.92rem;
+    }
+    .contact-email, .contact-phone {
+      color: var(--ink);
+      font-weight: 600;
+    }
+    .contact-email:hover, .contact-phone:hover { color: var(--blue); }
+
+    .menu-open .mobile-menu { display: flex; }
+    #menu-button { display: none; }
+
     @media (max-width: 700px) {
-      .timeline-grid::before { left: 1rem; top: 1rem; bottom: 1rem; }
-      .timeline-year-group { grid-template-columns: 2rem minmax(0, 1fr); column-gap: 1rem; padding: 1.25rem 0 0.5rem; }
-      .timeline-year-label { padding: 0; text-align: left; writing-mode: vertical-rl; transform: rotate(180deg); font-size: 1.5rem; }
-      .timeline-year-label::after { top: 0.1rem; right: auto; left: 0.52rem; }
-      .timeline-season-row { grid-template-columns: 4.25rem minmax(0, 1fr); gap: 0.75rem; min-height: 0; }
+      .timeline-grid::before {
+        left: 1rem;
+        top: 1rem;
+        bottom: 1rem;
+      }
+      .timeline-year-group {
+        grid-template-columns: 2rem minmax(0, 1fr);
+        column-gap: 1rem;
+        padding: 1.25rem 0 0.5rem;
+      }
+      .timeline-year-label {
+        padding: 0;
+        text-align: left;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-size: 1.5rem;
+      }
+      .timeline-year-label::after {
+        top: 0.1rem;
+        right: auto;
+        left: 0.52rem;
+      }
+      .timeline-season-row {
+        grid-template-columns: 4.25rem minmax(0, 1fr);
+        gap: 0.75rem;
+        min-height: 0;
+      }
       .timeline-season-label { padding-top: 1rem; font-size: 0.66rem; }
       .timeline-events { grid-template-columns: 1fr; }
+      .contact-panel { justify-content: flex-start; }
+      .contact-details { align-items: flex-start; text-align: left; }
+      #menu-button { display: inline-flex; }
     }
   </style>
 </head>
@@ -79,6 +241,7 @@
         <span class="block font-bold text-xl tracking-tight">Marco Vital</span>
         <span class="block text-xs text-[#5d6873] mt-1">Mechanical Engineering</span>
       </button>
+
       <div class="hidden md:flex items-center gap-7 text-sm font-semibold">
         <button onclick="switchPage('home')" id="nav-home" class="nav-link active py-2">Home</button>
         <button onclick="switchPage('experience')" id="nav-experience" class="nav-link py-2">Work Experience</button>
@@ -86,10 +249,13 @@
         <button onclick="switchPage('fsae')" id="nav-fsae" class="nav-link py-2">FSAE</button>
         <button onclick="switchPage('skills')" id="nav-skills" class="nav-link py-2">Skills</button>
         <button onclick="switchPage('timeline')" id="nav-timeline" class="nav-link py-2">Timeline</button>
-        <button onclick="switchPage('test')" id="nav-test" class="nav-link py-2">Test</button>
       </div>
-      <button id="menu-button" class="md:hidden text-xl p-2" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu"><i class="fa-solid fa-bars"></i></button>
+
+      <button id="menu-button" class="md:hidden text-xl p-2" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </nav>
+
     <div id="mobile-menu" class="mobile-menu md:hidden hidden flex-col gap-1 px-5 pb-4 text-sm font-semibold border-t border-[#dfe2df]">
       <button onclick="switchPage('home')" class="text-left py-2">Home</button>
       <button onclick="switchPage('experience')" class="text-left py-2">Work Experience</button>
@@ -97,78 +263,151 @@
       <button onclick="switchPage('fsae')" class="text-left py-2">FSAE</button>
       <button onclick="switchPage('skills')" class="text-left py-2">Skills</button>
       <button onclick="switchPage('timeline')" class="text-left py-2">Timeline</button>
-      <button onclick="switchPage('test')" class="text-left py-2">Test</button>
     </div>
   </header>
 
   <main class="max-w-6xl mx-auto px-5 lg:px-8 py-12 md:py-20">
+    <!-- EDIT HERE: home page content is mostly driven by content.js. -->
     <section id="page-home" class="page-section active-page">
-      <div class="grid md:grid-cols-[1.1fr_.9fr] gap-12 items-center"><div><p class="eyebrow mb-5">Mechanical Engineering @ UMass Amherst</p><h1 class="text-4xl md:text-6xl font-bold leading-tight">Designing systems that move, build, and solve.</h1><p class="mt-6 text-lg text-[#5d6873] max-w-xl">I’m Marco Vital, a mechanical engineering student focused on robotics, product design, and hands-on problem solving through real-world engineering work.</p><div class="mt-8 flex flex-wrap gap-4"><button onclick="switchPage('experience')" class="bg-[#164e63] text-white px-5 py-3 font-semibold rounded">View experience</button><button onclick="switchPage('timeline')" class="border border-[#dfe2df] bg-white px-5 py-3 font-semibold rounded">See timeline</button></div></div><div class="card p-6 md:p-8"><div class="photo-placeholder text-[#5d6873] font-semibold text-lg">Photo / project placeholder</div><div class="mt-6 flex gap-4 text-sm text-[#5d6873]"><span><strong>Focus:</strong> Robotics</span><span><strong>Interests:</strong> CAD, FEA, prototyping</span></div></div></div>
-    </section>
-
-    <section id="page-timeline" class="page-section">
-      <div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Engineering journey</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Progress, one build at a time.</h1><p class="text-lg text-[#5d6873]">A snapshot of the projects, coursework, and design work that have shaped my path in mechanical engineering.</p></div>
-      <div class="timeline-grid" aria-label="Engineering timeline from Fall 2026 to Fall 2022">
-        <div class="timeline-year-group"><div class="timeline-year-label">2026</div><div class="timeline-seasons"><div class="timeline-season-row"><div class="timeline-season-label">Fall</div><div class="timeline-events"><article class="timeline-card timeline-theme-robotics card"><p class="eyebrow mb-2">Robotics</p><h3 class="font-bold text-lg mb-1">Advanced systems design</h3><p class="text-sm text-[#5d6873]">Exploring autonomous mechanisms and control-focused product engineering.</p></article></div></div></div></div>
-        <div class="timeline-year-group"><div class="timeline-year-label">2025</div><div class="timeline-seasons"><div class="timeline-season-row"><div class="timeline-season-label">Fall</div><div class="timeline-events"><article class="timeline-card timeline-theme-school card"><p class="eyebrow mb-2">School</p><h3 class="font-bold text-lg mb-1">Capstone and research</h3><p class="text-sm text-[#5d6873]">Pushing deeper into applied design work with an emphasis on system-level thinking.</p></article></div></div></div></div>
-        <div class="timeline-year-group"><div class="timeline-year-label">2024</div><div class="timeline-seasons"><div class="timeline-season-row"><div class="timeline-season-label">Fall</div><div class="timeline-events"><article class="timeline-card timeline-theme-bd card"><p class="eyebrow mb-2">Design</p><h3 class="font-bold text-lg mb-1">Design-build iteration</h3><p class="text-sm text-[#5d6873]">Refining prototypes and translating concepts into validated engineering solutions.</p></article></div></div></div></div>
-        <div class="timeline-year-group"><div class="timeline-year-label">2023</div><div class="timeline-seasons"><div class="timeline-season-row"><div class="timeline-season-label">Fall</div><div class="timeline-events"><article class="timeline-card timeline-theme-fsae card"><p class="eyebrow mb-2">FSAE</p><h3 class="font-bold text-lg mb-1">Vehicle systems work</h3><p class="text-sm text-[#5d6873]">Continuing hands-on work in automotive design, fabrication, and test execution.</p></article></div></div></div></div>
-        <div class="timeline-year-group"><div class="timeline-year-label">2022</div><div class="timeline-seasons"><div class="timeline-season-row"><div class="timeline-season-label">Fall</div><div class="timeline-events"><article class="timeline-card timeline-theme-school card"><p class="eyebrow mb-2">Academics</p><h3 class="font-bold text-lg mb-1">Foundations</h3><p class="text-sm text-[#5d6873]">Building the technical base in statics, materials, and engineering design.</p></article></div></div></div></div>
-      </div>
-    </section>
-
-    <section id="page-experience" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Work experience</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Work Experience</h1><p class="text-lg text-[#5d6873]">Opportunities that have helped me combine engineering fundamentals with hands-on product and systems work.</p></div><div class="grid gap-6"><article class="card p-6"><div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3"><div><p class="eyebrow">Mechanical Engineering</p><h2 class="text-2xl font-bold mt-2">Engineering Intern / Product Development</h2></div><span class="text-sm font-semibold text-[#5d6873]">2024–Present</span></div><p class="mt-4 text-[#5d6873]">Supported design iteration, prototyping, and analysis work with a focus on practical engineering solutions and manufacturability.</p></article></div></section>
-
-    <section id="page-robotics" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Student design team</p><h1 class="text-4xl md:text-5xl font-bold mb-4">UMass Robotics</h1><p class="text-lg text-[#5d6873]">Working on robotic systems, mechanized motion, and prototype development in a collaborative engineering environment.</p></div><div class="card p-6"><p class="text-[#5d6873]">Design, prototyping, and testing work centered on building reliable robotic systems and learning through iterative development.</p></div></section>
-
-    <section id="page-fsae" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Student design team</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Formula SAE</h1><p class="text-lg text-[#5d6873]">Applying mechanical design, manufacturing, and data-driven testing to a competitive vehicle project.</p></div><div class="card p-6"><p class="text-[#5d6873]">Contributing to vehicle systems, fabrication decisions, and performance-focused engineering improvements.</p></div></section>
-
-    <section id="page-projects" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Personal work</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Projects</h1><p class="text-lg text-[#5d6873]">A selection of hands-on builds and problem-solving work across mechanical and product design.</p></div><div class="card p-6"><p class="text-[#5d6873]">Project spotlights and design studies will appear here, with examples of prototypes, modeling work, and system-level problem solving.</p></div></section>
-
-    <section id="page-skills" class="page-section"><div class="max-w-3xl mb-12"><p class="eyebrow mb-3">Capabilities</p><h1 class="text-4xl md:text-5xl font-bold mb-4">Skills</h1><p class="text-lg text-[#5d6873]">Core tools and engineering skills developed through coursework, design teams, and practical hands-on work.</p></div><div class="grid md:grid-cols-2 gap-6"><div class="card p-6"><h3 class="text-xl font-bold mb-3">Design & analysis</h3><ul class="text-[#5d6873] space-y-2"><li>CAD modeling</li><li>FEA / simulation</li><li>Design for manufacturing</li></ul></div><div class="card p-6"><h3 class="text-xl font-bold mb-3">Build & test</h3><ul class="text-[#5d6873] space-y-2"><li>Prototyping</li><li>Testing and validation</li><li>Iteration and troubleshooting</li></ul></div></div></section>
-
-    <section id="page-test" class="page-section">
-      <div class="max-w-3xl mb-8">
-        <p class="eyebrow mb-3">Temporary test page</p>
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">Interactive 3D Model</h1>
-        <p class="text-lg text-[#5d6873]">Drag to rotate, scroll or pinch to zoom, and use the controls on the viewer.</p>
-      </div>
-
-      <div class="bg-white border border-[#dfe2df] rounded p-3 md:p-5">
-        <model-viewer
-          src="test-model.glb"
-          alt="Interactive 3D model test"
-          camera-controls
-          auto-rotate
-          shadow-intensity="1"
-          exposure="1"
-          environment-image="neutral"
-          style="width: 100%; height: min(65vw, 600px); min-height: 360px; background: #eef1ee; border-radius: 6px;"
-        >
-          <div slot="poster" class="h-full flex items-center justify-center text-[#5d6873] text-center p-6">
-            Add your model at assets/models/test-model.glb to load the 3D viewer.
+      <div class="grid md:grid-cols-[1.1fr_.9fr] gap-12 items-center">
+        <div>
+          <p class="eyebrow mb-5">Mechanical Engineering @ UMass Amherst</p>
+          <h1 class="text-4xl md:text-6xl font-bold leading-tight">Marco Vital</h1>
+          <p class="text-lg text-[#5d6873] mt-5 max-w-xl">Currently working with UMass Robotics and Formula SAE.</p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <button onclick="switchPage('experience')" class="bg-[#164e63] text-white font-semibold px-5 py-3 rounded-md">View current co-op</button>
+            <button onclick="switchPage('timeline')" class="border border-[#dfe2df] bg-white text-[#17202a] font-semibold px-5 py-3 rounded-md">See timeline</button>
           </div>
-        </model-viewer>
+        </div>
+
+        <div>
+          <img class="profile-image" src="assets/images/profile-placeholder.svg" alt="Marco Vital profile placeholder" />
+        </div>
+      </div>
+    </section>
+
+    <!-- EDIT HERE: timeline entries live in content.js -->
+    <section id="page-timeline" class="page-section">
+      <div class="max-w-3xl mb-12">
+        <p class="eyebrow mb-3">Engineering journey</p>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Progress, one build at a time.</h1>
+        <p class="text-lg text-[#5d6873]">A season-by-season view of the work, teams, and experiences shaping my engineering path.</p>
+      </div>
+      <div class="timeline-grid" aria-label="Engineering timeline"></div>
+    </section>
+
+    <section id="page-experience" class="page-section">
+      <div class="max-w-3xl mb-12">
+        <p class="eyebrow mb-3">Work experience</p>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Work Experience</h1>
       </div>
 
-      <p class="mt-6 text-sm text-[#5d6873]"><strong>Model path:</strong> <code>test-model.glb</code></p>
-      <p class="mt-2 text-sm text-[#5d6873]"><button onclick="switchPage('home')" class="text-[#164e63] underline">Return to portfolio</button></p>
+      <div class="card p-6 md:p-8 max-w-3xl">
+        <p class="eyebrow mb-2">Boston Dynamics</p>
+        <h2 class="text-2xl font-bold mb-3">Mechanical engineering</h2>
+        <p class="text-[#5d6873]">Experience details coming soon.</p>
+      </div>
+    </section>
+
+    <section id="page-robotics" class="page-section">
+      <div class="max-w-3xl mb-12">
+        <p class="eyebrow mb-3">Student design team</p>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">UMass Robotics Research</h1>
+        <p class="text-lg text-[#5d6873]">Mechatronic problem solving, prototype iteration, and practical engineering decision-making in dynamic environments.</p>
+      </div>
+
+      <div class="grid md:grid-cols-[1.2fr_.8fr] gap-8">
+        <div class="bg-white border border-[#dfe2df] rounded p-3 md:p-5">
+          <model-viewer
+            src="assets/models/test-model.glb"
+            alt="Interactive 3D model"
+            camera-controls
+            auto-rotate
+            shadow-intensity="1"
+            exposure="1"
+            environment-image="neutral"
+            style="width: 100%; height: min(65vw, 600px); min-height: 360px; background: #eef1ee; border-radius: 6px;"
+          >
+            <div slot="poster" class="h-full flex items-center justify-center text-[#5d6873] text-center p-6">
+              Add your model at assets/models/test-model.glb to load the 3D viewer.
+            </div>
+          </model-viewer>
+        </div>
+
+        <div class="space-y-6">
+          <div class="card p-5">
+            <p class="eyebrow">Robotics Club Quadruped</p>
+            <p class="mt-2 text-sm text-[#5d6873]">September 2024 – May 2025</p>
+            <p class="mt-4 text-[#5d6873]">The quadruped project focused on developing a stable and mobile robot platform for club-driven mechatronic experimentation. I worked on leg geometry, structural refinement, and real-world prototyping iterations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-fsae" class="page-section">
+      <div class="max-w-3xl mb-12">
+        <p class="eyebrow mb-3">Student design team</p>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Formula SAE</h1>
+        <p class="text-lg text-[#5d6873]">Designing, manufacturing, and testing as part of a student-built race car team.</p>
+      </div>
+    </section>
+
+    <section id="page-projects" class="page-section">
+      <div class="max-w-3xl mb-12">
+        <p class="eyebrow mb-3">Personal work</p>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Projects</h1>
+        <p class="text-lg text-[#5d6873]">Work across design, making, and engineering.</p>
+      </div>
+    </section>
+
+    <section id="page-skills" class="page-section">
+      <div class="max-w-3xl mb-12">
+        <p class="eyebrow mb-3">Capabilities</p>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Skills</h1>
+        <p class="text-lg text-[#5d6873]">Mechanical design, prototyping, and hands-on problem solving.</p>
+      </div>
     </section>
   </main>
-  <footer class="border-t border-[#dfe2df] mt-8"><div class="max-w-6xl mx-auto px-5 lg:px-8 py-8"><p class="font-bold">Marco Vital</p><p class="text-sm text-[#5d6873] mt-1">Mechanical Engineering portfolio</p></div></footer>
+
+  <footer class="border-t border-[#dfe2df] mt-8">
+    <div class="max-w-6xl mx-auto px-5 lg:px-8 py-8">
+      <div class="contact-panel">
+        <div class="contact-actions" aria-label="Contact methods">
+          <a class="contact-action contact-action-email" href="mailto:___" aria-label="Email Marco"><i class="fa-solid fa-envelope"></i></a>
+          <a class="contact-action contact-action-phone" href="tel:___" aria-label="Call Marco"><i class="fa-solid fa-phone"></i></a>
+        </div>
+
+        <div class="contact-details">
+          <a class="contact-email" href="mailto:___">___ placeholder</a>
+          <a class="contact-phone" href="tel:___">___ placeholder</a>
+        </div>
+      </div>
+
+      <div class="mt-6 text-center md:text-left">
+        <p class="font-bold">Marco Vital</p>
+        <p class="text-sm text-[#5d6873] mt-1">Mechanical Engineering @ UMass Amherst</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="content.js"></script>
   <script>
-    const pages = ['home', 'timeline', 'experience', 'robotics', 'fsae', 'projects', 'skills', 'test'];
+    const pages = ['home', 'timeline', 'experience', 'robotics', 'fsae', 'projects', 'skills'];
+
     function switchPage(page, updateHash = true) {
       if (!pages.includes(page)) page = 'home';
+
       pages.forEach((item) => {
         const pageElement = document.getElementById(`page-${item}`);
         const navElement = document.getElementById(`nav-${item}`);
         if (pageElement) pageElement.classList.toggle('active-page', item === page);
         if (navElement) navElement.classList.toggle('active', item === page);
       });
+
       if (updateHash) history.replaceState(null, '', `#${page}`);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+
     const menuButton = document.getElementById('menu-button');
     if (menuButton) {
       menuButton.addEventListener('click', () => {
@@ -177,9 +416,11 @@
         menuButton.setAttribute('aria-expanded', expanded);
       });
     }
+
     document.querySelectorAll('.mobile-menu button').forEach((button) => {
       button.addEventListener('click', () => document.body.classList.remove('menu-open'));
     });
+
     const initialPage = location.hash.slice(1);
     switchPage(pages.includes(initialPage) ? initialPage : 'home', false);
   </script>

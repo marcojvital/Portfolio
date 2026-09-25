@@ -1,63 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Temporary 3D model test page">
-  <title>Test | 3D Model Viewer</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-  <style>
-    :root { --ink: #17202a; --muted: #5d6873; --paper: #f7f6f2; --blue: #164e63; --line: #dfe2df; }
-    * { box-sizing: border-box; }
-    body { margin: 0; color: var(--ink); background: var(--paper); font-family: 'DM Sans', sans-serif; }
-    h1, h2 { font-family: 'Space Grotesk', sans-serif; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content="0; url=index.html" />
+  <title>Redirecting to index.html</title>
 </head>
 <body>
-  <header class="border-b border-[#dfe2df] bg-[#f7f6f2]/95 sticky top-0 z-50 backdrop-blur">
-    <nav class="max-w-6xl mx-auto px-5 lg:px-8 h-20 flex items-center justify-between" aria-label="Test page navigation">
-      <a href="index.html" class="text-left no-underline text-[#17202a]">
-        <span class="block font-bold text-xl tracking-tight">Marco Vital</span>
-        <span class="block text-xs text-[#5d6873] mt-1">Mechanical Engineering</span>
-      </a>
-      <span class="font-semibold text-[#164e63]">Test</span>
-    </nav>
-  </header>
-
-  <main class="max-w-6xl mx-auto px-5 lg:px-8 py-12 md:py-20">
-    <div class="max-w-3xl mb-8">
-      <p class="text-[#c65d32] tracking-wider text-xs font-bold uppercase mb-3">Temporary test tab</p>
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">Interactive 3D Model</h1>
-      <p class="text-lg text-[#5d6873]">Drag to rotate, scroll or pinch to zoom, and use the controls on the viewer.</p>
-    </div>
-
-    <div class="bg-white border border-[#dfe2df] rounded p-3 md:p-5">
-      <model-viewer
-        src="assets/models/test-model.glb"
-        alt="Interactive 3D model test"
-        camera-controls
-        auto-rotate
-        shadow-intensity="1"
-        exposure="1"
-        environment-image="neutral"
-        style="width: 100%; height: min(65vw, 600px); min-height: 360px; background: #eef1ee; border-radius: 6px;"
-      >
-        <div slot="poster" class="h-full flex items-center justify-center text-[#5d6873] text-center p-6">
-          Add your model at assets/models/test-model.glb to load the 3D viewer.
-        </div>
-      </model-viewer>
-    </div>
-
-    <p class="mt-6 text-sm text-[#5d6873]">
-      <strong>Model path:</strong> <code>assets/models/test-model.glb</code>
-    </p>
-    <p class="mt-2 text-sm text-[#5d6873]"><a href="index.html" class="text-[#164e63] underline">Return to portfolio</a></p>
-  </main>
+  <p>This test page has been folded into <a href="index.html">index.html</a>.</p>
 </body>
 </html>
