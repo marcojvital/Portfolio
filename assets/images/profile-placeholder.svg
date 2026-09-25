@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
-  <title id="title">Profile image placeholder</title>
-  <desc id="desc">Replace this file with Marco's profile picture.</desc>
-  <rect width="1200" height="800" fill="#eef1ee"/>
-  <rect x="40" y="40" width="1120" height="720" rx="24" fill="#f7f6f2" stroke="#dfe2df" stroke-width="8"/>
-  <circle cx="600" cy="320" r="110" fill="#d3b08c"/>
-  <path d="M350 650c35-150 125-220 250-220s215 70 250 220" fill="#164e63"/>
-  <text x="600" y="720" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" fill="#5d6873">Profile picture</text>
-</svg>
